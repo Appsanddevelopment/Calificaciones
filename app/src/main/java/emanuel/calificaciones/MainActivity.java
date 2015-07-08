@@ -1,9 +1,12 @@
 package emanuel.calificaciones;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +15,18 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button cmdabrir=(Button)findViewById(R.id.cmdabrir2);
+
+        cmdabrir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i= new Intent(MainActivity.this,principal.class);
+                startActivity(i);
+                //mire emanuel si necesita pasar referencias el intent tiene un metodo putextras, reviselo pasa arreglos string lo que sea
+
+            }
+        });
     }
     
     //Cambio

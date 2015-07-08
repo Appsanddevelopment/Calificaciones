@@ -19,5 +19,7 @@
 
     <!-- Botones -->
     <string name="buttom_calcular">Calcular</string>
+    <string name="cmdabrir">abrir</string>
+    <string name="cmdabrir2">Abrir</string>
 
 </resources>
