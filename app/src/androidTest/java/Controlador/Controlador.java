@@ -14,6 +14,8 @@ public class Controlador {
     public Controlador(){
 
     }
+
+    //YA DEBERIA FUNCIONAR AL LLAMAR LOS METODOS.
 /*
 
 ARREGLO
@@ -35,7 +37,10 @@ ArrayList<String> nfinal=utyliti.converTonfalta(nfalta);
 
         Negocio n=getbussinesInstance.ObtenerNegocio();
        float total= n.calcularNotaf(n1,n2,n3,Nfinal);
-return "";
+        String nofinal=utyliti.convertostringnotafinal(total);
+
+
+    return nofinal;
     }
 
 }
