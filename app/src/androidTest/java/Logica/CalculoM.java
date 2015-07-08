@@ -1,5 +1,5 @@
 package Logica;
-
+import java.util.ArrayList;
 /**
  * Created by macaco on 08/07/2015.
  */
@@ -11,8 +11,8 @@ public class CalculoM {
 
 
 
-    public float calcularNotafalta(float n1,float n2,float n3){
-
+    public ArrayList<Float> calcularNotafalta(float n1,float n2,float n3){
+ArrayList<Float>arreglo1= new ArrayList<Float>();
         float notat1=n1*0.23f;
         float notat2=n2*0.23f;
         float notat3=n3*0.23f;
@@ -21,10 +21,12 @@ public class CalculoM {
 
 
         if(suma<3.0f){
-            return notaPasar(suma);
+            arreglo1.add(suma);//primer poscion lo que lleva y la segunda lo que necesita
+           arreglo1.add(notaPasar(suma));
+
 
         }
-        return 0.0f;
+        return arreglo1;
     }
 
     public float notaPasar(float suma){
@@ -42,4 +44,13 @@ public class CalculoM {
     }
 
 
+
+    public float calcularnotafinal(float n1,float n2,float n3,float Nfinal){
+        float nota1=n1*0.23f;
+        float nota2=n2*0.23f;
+        float nota3=n3*0.23f;
+        float nfinal=Nfinal*0.30f;
+
+        return nota1+nota2+nota3+nfinal;
+    }
 }

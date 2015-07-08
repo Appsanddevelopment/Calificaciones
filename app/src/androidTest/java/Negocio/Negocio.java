@@ -1,6 +1,8 @@
 package Negocio;
 
 
+import java.util.ArrayList;
+
 import Logica.CalculoM;
 
 /**
@@ -15,12 +17,14 @@ public class Negocio {
     }
 
 
-    public float CalcularNotaFalta(float n1,float n2,float n3){
+    public ArrayList<Float> CalcularNotaFalta(float n1,float n2,float n3){
         return c.calcularNotafalta(n1,n2,3);
     }
 
 
-    public float calcularNotaf(){
-        return 0.0f;
+    public float calcularNotaf(float n1,float n2,float n3,float nfinal){
+        return c.calcularnotafinal(n1, n2, n3, nfinal);
     }
+
+
 }
