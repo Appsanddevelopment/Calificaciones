@@ -1,18 +1,23 @@
 <resources>
     <!-- Nombre de la aplicación -->
     <string name="app_name">Calificaciones</string>
+    <string name="title_activity_principal">Principal</string>
 
     <!-- Menú de la app -->
     <string name="action_acerca">Acerca de</string>
-    <string name="title_activity_principal">principal</string>
+    <string name="action_limpiar">Limpiar campos</string>
 
     <!-- String's del activity principal -->
     <string name="string_text1">Nota 1</string>
     <string name="string_text2">Nota 2</string>
     <string name="string_text3">Nota 3</string>
     <string name="string_title">Ingrese sus notas</string>
+    <string name="string_70">70%</string>
+    <string name="string_notaMinima">Nota mínima del examen</string>
+    <string name="string_NotaExamen">Nota del examen</string>
+    <string name="string_definitiva">Nota definitiva</string>
 
+    <!-- Botones -->
     <string name="buttom_calcular">Calcular</string>
-
 
 </resources>
