@@ -22,5 +22,8 @@ public class utyliti {
       return String.valueOf(n);
     }
 
+    public static String convertostringnotafinal(float n){
+        return String.valueOf(n);
+    }
 
 }
