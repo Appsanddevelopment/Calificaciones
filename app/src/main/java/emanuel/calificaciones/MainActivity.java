@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -49,6 +50,10 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+
+        else if(id==R.id.Mcalcular){
+            Toast.makeText(getBaseContext(),"Ejemplo del menu",Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
