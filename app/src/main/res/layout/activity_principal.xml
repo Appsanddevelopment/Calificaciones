@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="10"
-                android:id="@+id/editText"
+                android:id="@+id/txtNota1"
                 android:layout_weight="1"
                 android:gravity="center"/>
 
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="10"
-                android:id="@+id/editText2"
+                android:id="@+id/txtNota2"
                 android:layout_weight="1"
                 android:gravity="center"/>
 
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="10"
-                android:id="@+id/editText3"
+                android:id="@+id/txtNota3"
                 android:layout_weight="1"
                 android:gravity="center"/>
         </TableRow>
@@ -171,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="0"
-                android:id="@+id/editTextExamen"
+                android:id="@+id/txtExamen"
                 android:layout_weight="0.74"
                 android:gravity="center"/>
         </LinearLayout>
