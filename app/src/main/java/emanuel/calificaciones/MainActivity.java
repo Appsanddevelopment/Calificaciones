@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.prefs.Preferences;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -37,21 +39,16 @@ public class MainActivity extends ActionBarActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+    public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_salir) {
-            return true;
-        }
+        //Cierra la aplicación
+        if (id == R.id.action_salir)
+            System.exit(0);
 
         //Resultado de tocar un "Acerca de"
-        else if(id==R.id.action_acerca){
-            Toast.makeText(getBaseContext(),"Ejemplo del menu",Toast.LENGTH_SHORT).show();
-        }
+        else if(id==R.id.action_acerca)
+            Toast.makeText(getBaseContext(),"Creado por Jairo y Emanuel",Toast.LENGTH_SHORT).show();
 
         return super.onOptionsItemSelected(item);
     }

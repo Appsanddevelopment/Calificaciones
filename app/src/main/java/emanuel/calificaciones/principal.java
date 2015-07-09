@@ -1,5 +1,6 @@
 package emanuel.calificaciones;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,15 +31,9 @@ public class principal extends ActionBarActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+    public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_acerca)
-            Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
 
         if(id == R.id.action_limpiar){
             nota1.setText("");
@@ -47,9 +42,17 @@ public class principal extends ActionBarActivity {
             examen.setText("");
         }
 
-        if(id == R.id.action_salir)
-            System.exit(0);
+        if(id == R.id.action_volver){
+            super.onBackPressed();
+        }
 
+        if(id == R.id.action_salir){
+            Intent act = new Intent(Intent.ACTION_MAIN);
+            finish();
+        }
+
+        if (id == R.id.action_acerca)
+            Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
 
         return super.onOptionsItemSelected(item);
     }
