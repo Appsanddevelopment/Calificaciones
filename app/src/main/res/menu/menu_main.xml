@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_acerca"
+    <item android:id="@+id/action_salir"
+        android:title="@string/mn_Salir"
         android:orderInCategory="100"
         app:showAsAction="never" />
-    <item android:id="@+id/Mcalcular"
-        android:title="@string/action_acerca"
+
+    <item android:id="@+id/action_acerca"
+        android:title="@string/mn_acerca"
         android:orderInCategory="100"
-        android:icon="@android:drawable/ic_menu_add"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
 
 </menu>

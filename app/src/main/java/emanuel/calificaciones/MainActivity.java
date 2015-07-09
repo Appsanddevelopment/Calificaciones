@@ -16,7 +16,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button cmdabrir=(Button)findViewById(R.id.cmdabrir2);
+        Button cmdabrir = (Button)findViewById(R.id.cmdabrir2);
 
         cmdabrir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,13 +25,9 @@ public class MainActivity extends ActionBarActivity {
                 Intent i= new Intent(MainActivity.this,principal.class);
                 startActivity(i);
                 //mire emanuel si necesita pasar referencias el intent tiene un metodo putextras, reviselo pasa arreglos string lo que sea
-
             }
         });
     }
-    
-    //Cambio
-    //Otro cambio, este desde android studio
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,11 +44,12 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_salir) {
             return true;
         }
 
-        else if(id==R.id.Mcalcular){
+        //Resultado de tocar un "Acerca de"
+        else if(id==R.id.action_acerca){
             Toast.makeText(getBaseContext(),"Ejemplo del menu",Toast.LENGTH_SHORT).show();
         }
 

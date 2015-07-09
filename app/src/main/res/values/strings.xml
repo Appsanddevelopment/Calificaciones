@@ -4,8 +4,10 @@
     <string name="title_activity_principal">Principal</string>
 
     <!-- Menú de la app -->
-    <string name="action_acerca">Acerca de</string>
-    <string name="action_limpiar">Limpiar campos</string>
+    <string name="mn_acerca">Acerca de</string>
+    <string name="mn_limpiar">Limpiar campos</string>
+    <string name="mn_Salir">Salir</string>
+    <string name="mn_volver">Volver</string>
 
     <!-- String's del activity principal -->
     <string name="string_text1">Nota 1</string>
@@ -20,7 +22,6 @@
 
     <!-- Botones -->
     <string name="buttom_calcular">Calcular</string>
-    <string name="cmd_Salir">Salir</string>
     <string name="cmd_CalcularDef">Calcular definitiva</string>
 
 </resources>

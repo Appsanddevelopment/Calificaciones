@@ -1,9 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context="emanuel.calificaciones.principal">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="emanuel.calificaciones.principal">
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_acerca"
+    <item android:id="@+id/action_limpiar"
+        android:title="@string/mn_limpiar"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
+    <item android:id="@+id/action_volver"
+        android:title="@string/mn_volver"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_salir"
+        android:title="@string/mn_Salir"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_acerca"
+        android:title="@string/mn_acerca"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 </menu>
