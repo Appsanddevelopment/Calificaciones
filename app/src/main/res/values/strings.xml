@@ -16,10 +16,11 @@
     <string name="string_notaMinima">Nota mínima del examen</string>
     <string name="string_NotaExamen">Nota del examen</string>
     <string name="string_definitiva">Nota definitiva</string>
+    <string name="string_notaDefault">0.0</string>
 
     <!-- Botones -->
     <string name="buttom_calcular">Calcular</string>
-    <string name="cmdabrir">abrir</string>
-    <string name="cmdabrir2">Abrir</string>
+    <string name="cmd_Salir">Salir</string>
+    <string name="cmd_CalcularDef">Calcular definitiva</string>
 
 </resources>
