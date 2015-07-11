@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
 public class principal extends ActionBarActivity {
 
     EditText nota1, nota2, nota3, examen;

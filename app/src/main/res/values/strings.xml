@@ -2,6 +2,7 @@
     <!-- Nombre de la aplicación -->
     <string name="app_name">Calificaciones</string>
     <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_divisist">Divisist</string>
 
     <!-- Menú de la app -->
     <string name="mn_acerca">Acerca de</string>
@@ -23,5 +24,9 @@
     <!-- Botones -->
     <string name="buttom_calcular">Calcular</string>
     <string name="cmd_CalcularDef">Calcular definitiva</string>
+    <string name="cmd_divisist">Divisi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

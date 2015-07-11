@@ -20,6 +20,10 @@
             android:name=".principal"
             android:label="@string/title_activity_principal" >
         </activity>
+        <activity
+            android:name=".divisist"
+            android:label="@string/title_activity_divisist">
+        </activity>
     </application>
 
 </manifest>
