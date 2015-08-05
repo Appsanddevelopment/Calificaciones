@@ -45,10 +45,10 @@ public class principal extends ActionBarActivity {
 
                 ArrayList<String> result = c.calcularNotaFalta(n1, n2, n3);
                 falta = (TextView) findViewById(R.id.lblNotaExamen);
-                falta.setText(String.valueOf(result.get(0)));
-                lleva = (TextView) findViewById(R.id.lblNotaDefinitiva);
-                lleva.setText(String.valueOf(result.get(1)));
-                Toast.makeText(getBaseContext(), "Falta: "+ result.get(0)+" lleva: "+result.get(1), Toast.LENGTH_LONG).show();
+                falta.setText(String.valueOf(result.get(1)));
+                lleva = (TextView) findViewById(R.id.lblNotaMateria);
+                lleva.setText(String.valueOf(result.get(0)));
+                Toast.makeText(getBaseContext(), "Lleva "+ result.get(0)+" Falta "+result.get(1), Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -20,10 +20,10 @@ public class CalculoM {
 
         float suma=notat1+notat2+notat3;
 
-        if(suma<3.0f){
+
             arreglo1.add(suma);//primer posición lo que lleva y la segunda lo que necesita
             arreglo1.add(notaPasar(suma));
-        }
+
 
         return arreglo1;
     }
@@ -35,7 +35,7 @@ public class CalculoM {
             float sumanota=0.f;
             sumanota=nota+suma;
 
-            if(nota>=2.95f){
+            if(sumanota>=2.95f){
                 return  nota;
             }
         }
