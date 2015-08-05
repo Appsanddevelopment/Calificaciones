@@ -13,7 +13,7 @@ import Controlador.Controlador;
 
 public class principal extends ActionBarActivity {
 
-    Button cmdCalcular;
+    Button cmdcalcular;
     Controlador c = new Controlador();
     EditText nota1, nota2, nota3, examen;
 
