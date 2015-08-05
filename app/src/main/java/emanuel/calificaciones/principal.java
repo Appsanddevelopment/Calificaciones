@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+import Controlador.Controlador;
 
 
 
@@ -17,7 +19,8 @@ import android.widget.Toast;
 public class principal extends ActionBarActivity {
 
     EditText nota1, nota2, nota3, examen;
-
+    Button cmdcalcular;
+Controlador c= new Controlador();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,21 @@ public class principal extends ActionBarActivity {
         nota2 = (EditText) findViewById(R.id.txtNota2);
         nota3 = (EditText) findViewById(R.id.txtNota3);
         examen = (EditText) findViewById(R.id.txtExamen);
+
+        cmdcalcular=(Button)findViewById(R.id.cmdCalcular70);
+
+        cmdcalcular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            //aqui programamos  todo
+            public void onClick(View v) {
+
+
+
+            }
+        });
+
+
+
     }
 
     @Override
