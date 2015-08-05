@@ -21,6 +21,7 @@ public class principal extends ActionBarActivity {
     float n1 = (float) 1.0;
     float n2 = (float) 1.0;
     float n3 = (float) 1.0;
+    float ex=0.0f;
     TextView falta, lleva;
 
     @Override
@@ -32,15 +33,15 @@ public class principal extends ActionBarActivity {
         cmdcalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*nota1 = (EditText) findViewById(R.id.txtNota1);
+                nota1 = (EditText) findViewById(R.id.txtNota1);
                 nota2 = (EditText) findViewById(R.id.txtNota2);
                 nota3 = (EditText) findViewById(R.id.txtNota3);
                 examen = (EditText) findViewById(R.id.txtExamen);
 
-                n1 = Float.parseFloat(nota1.toString());
-                n2 = Float.parseFloat(nota2.toString());
-                n3 = Float.parseFloat(nota3.toString());*/
-                //ex = Float.parseFloat(examen.toString());
+                n1 = Float.parseFloat(nota1.getText().toString());
+                n2 = Float.parseFloat(nota2.getText().toString());
+                n3 = Float.parseFloat(nota3.getText().toString());
+               // ex = Float.parseFloat(examen.toString());
 
                 ArrayList<String> result = c.calcularNotaFalta(n1, n2, n3);
                 falta = (TextView) findViewById(R.id.lblNotaExamen);
