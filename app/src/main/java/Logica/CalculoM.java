@@ -30,13 +30,27 @@ public class CalculoM {
 
     public float notaPasar(float suma){
 
-        for(float i=0.0f;i<5.0f;i=i+0.1f){
-            float nota=i*0.3f;
+        for(float i=0.0f;i<5.0f;i=i+0.01f){
+            float nota=(i*0.3f);
             float sumanota=0.f;
             sumanota=nota+suma;
 
             if(sumanota>=2.95f){
-                return  nota;
+                return  hallarnumero(nota);
+            }
+        }
+
+        return 0.0f;
+    }
+
+    public float hallarnumero(float n){
+
+        for (float i=0.0f;i<5.0f;i=i+0.1f){
+            float n2=i*3;
+float n3=n2*0.3f;
+
+            if(n3>=n){
+                return n2;
             }
         }
 
