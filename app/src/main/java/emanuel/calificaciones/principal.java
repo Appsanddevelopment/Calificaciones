@@ -1,16 +1,24 @@
 package emanuel.calificaciones;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+
+
+
+
+
 public class principal extends ActionBarActivity {
 
     EditText nota1, nota2, nota3, examen;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
