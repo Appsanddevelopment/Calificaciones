@@ -180,7 +180,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/buttom_calcular"
-            android:id="@+id/button"
+            android:id="@+id/calcularDefinitiva"
             android:layout_gravity="center_horizontal" />
 
         <LinearLayout
@@ -203,16 +203,17 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="9dp"
-            android:layout_weight="0.12">
+            android:layout_weight="0.12"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="165dp"
+                android:layout_height="46dp"
                 android:text="@string/string_notaDefault"
-                android:id="@+id/lblNotaDefinitiva"
                 android:layout_weight="0.33"
+                android:id="@+id/lblNotaDefinitiva"
                 android:gravity="center"
-                android:textSize="30dp"/>
+                android:textSize="30dp"/>/>
 
         </LinearLayout>
 

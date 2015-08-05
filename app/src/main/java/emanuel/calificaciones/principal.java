@@ -5,19 +5,16 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-
-
-
-
-
+import Controlador.Controlador;
 
 public class principal extends ActionBarActivity {
 
+    Button cmdCalcular;
+    Controlador c = new Controlador();
     EditText nota1, nota2, nota3, examen;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +25,11 @@ public class principal extends ActionBarActivity {
         nota2 = (EditText) findViewById(R.id.txtNota2);
         nota3 = (EditText) findViewById(R.id.txtNota3);
         examen = (EditText) findViewById(R.id.txtExamen);
+
+        float n1 = Float.parseFloat(nota1.toString());
+
+        cmdCalcular = (Button) findViewById(R.id.cmdCalcular70);
+        
     }
 
     @Override
