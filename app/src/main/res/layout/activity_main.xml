@@ -28,7 +28,7 @@
             android:layout_width="327dp"
             android:layout_height="wrap_content"
             android:text="@string/cmd_divisist"
-            android:id="@+id/button2"
+            android:id="@+id/cmdDivisit"
             android:layout_gravity="right" />
     </LinearLayout>
 
