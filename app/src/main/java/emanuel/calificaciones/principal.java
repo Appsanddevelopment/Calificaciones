@@ -33,22 +33,25 @@ public class principal extends ActionBarActivity {
         cmdcalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nota1 = (EditText) findViewById(R.id.txtNota1);
-                nota2 = (EditText) findViewById(R.id.txtNota2);
-                nota3 = (EditText) findViewById(R.id.txtNota3);
-                examen = (EditText) findViewById(R.id.txtExamen);
+                try {
+                    nota1 = (EditText) findViewById(R.id.txtNota1);
+                    nota2 = (EditText) findViewById(R.id.txtNota2);
+                    nota3 = (EditText) findViewById(R.id.txtNota3);
 
-                n1 = Float.parseFloat(nota1.getText().toString());
-                n2 = Float.parseFloat(nota2.getText().toString());
-                n3 = Float.parseFloat(nota3.getText().toString());
-               // ex = Float.parseFloat(examen.toString());
+                    n1 = Float.parseFloat(nota1.getText().toString());
+                    n2 = Float.parseFloat(nota2.getText().toString());
+                    n3 = Float.parseFloat(nota3.getText().toString());
 
-                ArrayList<String> result = c.calcularNotaFalta(n1, n2, n3);
-                falta = (TextView) findViewById(R.id.lblNotaExamen);
-                falta.setText(String.valueOf(result.get(1)));
-                lleva = (TextView) findViewById(R.id.lblNotaMateria);
-                lleva.setText(String.valueOf(result.get(0)));
-                Toast.makeText(getBaseContext(), "Lleva "+ result.get(0)+" Falta "+result.get(1), Toast.LENGTH_LONG).show();
+                    ArrayList<String> result = c.calcularNotaFalta(n1, n2, n3);
+                    falta = (TextView) findViewById(R.id.lblNotaExamen);
+                    falta.setText(String.valueOf(result.get(1)));
+                    lleva = (TextView) findViewById(R.id.lblNotaMateria);
+                    lleva.setText(String.valueOf(result.get(0)));
+                    Toast.makeText(getBaseContext(), "Lleva " + result.get(0) + " Falta " + result.get(1), Toast.LENGTH_LONG).show();
+                }catch(Exception ex){
+                    Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
+                    return;
+                }
             }
         });
     }
@@ -63,8 +66,7 @@ public class principal extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
-
-
+        
         if(id == R.id.action_limpiar){
             nota1.setText("");
             nota2.setText("");
