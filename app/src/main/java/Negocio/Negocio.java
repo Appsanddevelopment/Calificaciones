@@ -18,7 +18,7 @@ public class Negocio {
 
 
     public ArrayList<Float> CalcularNotaFalta(float n1,float n2,float n3){
-        return c.calcularNotafalta(n1,n2,3);
+        return c.calcularNotafalta(n1,n2,n3);
     }
 
 
