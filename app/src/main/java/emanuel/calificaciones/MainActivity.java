@@ -1,6 +1,7 @@
 package emanuel.calificaciones;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button cmdabrir = (Button)findViewById(R.id.cmdabrir2);
+        Button cmdDivisit=(Button)findViewById(R.id.cmdDivisit);
 
         cmdabrir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +28,22 @@ public class MainActivity extends ActionBarActivity {
                 Intent i= new Intent(MainActivity.this,principal.class);
                 startActivity(i);
                 //mire emanuel si necesita pasar referencias el intent tiene un metodo putextras, reviselo pasa arreglos string lo que sea
+
+
+
+            }
+        });
+
+
+        cmdDivisit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "http://divisit.ufps.edu.co";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+
             }
         });
     }

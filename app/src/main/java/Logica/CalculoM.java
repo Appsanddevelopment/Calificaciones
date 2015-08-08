@@ -18,7 +18,7 @@ public class CalculoM {
         float notat2=n2*0.23f;
         float notat3=n3*0.23f;
 
-        float suma=notat1+notat2+notat3;
+        float suma=(n1*0.23f)+(n2*0.23f)+(n3*0.23f);
 
 
             arreglo1.add(suma);//primer posición lo que lleva y la segunda lo que necesita
