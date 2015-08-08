@@ -18,11 +18,11 @@ public class principal extends ActionBarActivity {
     Button cmdcalcular;
     Controlador c = new Controlador();
     EditText nota1, nota2, nota3, examen;
-    float n1 = (float) 1.0;
-    float n2 = (float) 1.0;
-    float n3 = (float) 1.0;
-    float ex=0.0f;
-    TextView falta, lleva;
+    float n1 = (float) 0.0;
+    float n2 = (float) 0.0;
+    float n3 = (float) 0.0;
+    float ex = (float) 0.0;
+    TextView minima, lleva, definitiva;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +43,12 @@ public class principal extends ActionBarActivity {
                     n3 = Float.parseFloat(nota3.getText().toString());
 
                     ArrayList<String> result = c.calcularNotaFalta(n1, n2, n3);
-                    falta = (TextView) findViewById(R.id.lblNotaExamen);
-                    falta.setText(String.valueOf(result.get(1)));
+                    minima = (TextView) findViewById(R.id.lblNotaExamen);
+                    minima.setText(String.valueOf(result.get(1)));
                     lleva = (TextView) findViewById(R.id.lblNotaMateria);
                     lleva.setText(String.valueOf(result.get(0)));
-                    Toast.makeText(getBaseContext(), "Lleva " + result.get(0) + " Falta " + result.get(1), Toast.LENGTH_LONG).show();
+                    definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
+                    definitiva.setText(String.valueOf(result.get(0)));
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
                     return;
@@ -66,25 +67,26 @@ public class principal extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
-        
-        if(id == R.id.action_limpiar){
-            nota1.setText("");
-            nota2.setText("");
-            nota3.setText("");
-            examen.setText("");
-        }
+        try {
+            if (id == R.id.action_limpiar) {
+                nota1.setText("");
+                nota2.setText("");
+                nota3.setText("");
+                examen.setText("");
+            }
 
-        if(id == R.id.action_volver){
-            super.onBackPressed();
-        }
+            if (id == R.id.action_volver) {
+                super.onBackPressed();
+            }
 
-        if(id == R.id.action_salir){
-            Intent act = new Intent(Intent.ACTION_MAIN);
-            finish();
-        }
+            if (id == R.id.action_salir) {
+                Intent act = new Intent(Intent.ACTION_MAIN);
+                finish();
+            }
 
-        if (id == R.id.action_acerca)
-            Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
+            if (id == R.id.action_acerca)
+                Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
+        }catch(Exception ex){}
 
         return super.onOptionsItemSelected(item);
     }
