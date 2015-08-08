@@ -32,21 +32,22 @@ public class CalculoM {
 
         for(float i=0.0f;i<5.0f;i=i+0.01f){
             float nota=(i*0.3f);
-            float sumanota=0.f;
+            float sumanota=0.0f;
             sumanota=nota+suma;
 
             if(sumanota>=2.95f){
                 return  hallarnumero(nota);
             }
+
         }
 
         return 0.0f;
     }
 
     public float hallarnumero(float n){
-
-        for (float i=0.0f;i<5.0f;i=i+0.1f){
-            float n2=i*3;
+        float n2=0.0f;
+        for (float i=0.0f;i<=5.0f;i=i+0.1f){
+             n2=i*3;
 float n3=n2*0.3f;
 
             if(n3>=n){

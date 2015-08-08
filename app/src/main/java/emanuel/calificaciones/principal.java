@@ -48,11 +48,27 @@ public class principal extends ActionBarActivity {
                     lleva = (TextView) findViewById(R.id.lblNotaMateria);
                     lleva.setText(String.valueOf(result.get(0)));
                     definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
-                    definitiva.setText(String.valueOf(result.get(0)));
+                    definitiva.setText(String.valueOf(result.get(1)));
+
+                    float mini=Float.parseFloat(minima.getText().toString());
+                    float notafinal=Float.parseFloat(c.calcularNotafinal(n1,n2,n3,mini));
+
+                    if(notafinal<2.95){
+                        Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debio cancelar :v",Toast.LENGTH_SHORT).show();
+return;
+                    }
+
+                    if((n1+n2+n3)>=2.95f){
+                        Toast.makeText(getBaseContext(),"Felicidades ya pasaste , pase por su premio",Toast.LENGTH_SHORT).show();
+return;
+                    }
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
                     return;
                 }
+
+
+
             }
         });
     }
@@ -73,6 +89,8 @@ public class principal extends ActionBarActivity {
                 nota2.setText("");
                 nota3.setText("");
                 examen.setText("");
+               return true;
+
             }
 
             if (id == R.id.action_volver) {
@@ -86,7 +104,10 @@ public class principal extends ActionBarActivity {
 
             if (id == R.id.action_acerca)
                 Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
-        }catch(Exception ex){}
+        }catch(Exception ex){
+
+            Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
+        }
 
         return super.onOptionsItemSelected(item);
     }
