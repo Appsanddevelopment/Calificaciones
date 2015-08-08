@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
         cmdDivisit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://divisit.ufps.edu.co";
+                String url = "http://divisist.ufps.edu.co";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
