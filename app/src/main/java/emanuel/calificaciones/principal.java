@@ -41,7 +41,10 @@ public class principal extends ActionBarActivity {
                     n1 = Float.parseFloat(nota1.getText().toString());
                     n2 = Float.parseFloat(nota2.getText().toString());
                     n3 = Float.parseFloat(nota3.getText().toString());
-
+                }catch(Exception ex){
+                    Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
+                    return;
+                }finally{
                     ArrayList<String> result = c.calcularNotaFalta(n1, n2, n3);
                     minima = (TextView) findViewById(R.id.lblNotaExamen);
                     minima.setText(String.valueOf(result.get(1)));
@@ -49,9 +52,6 @@ public class principal extends ActionBarActivity {
                     lleva.setText(String.valueOf(result.get(0)));
                     definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
                     definitiva.setText(String.valueOf(result.get(0)));
-                }catch(Exception ex){
-                    Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
-                    return;
                 }
             }
         });
