@@ -101,7 +101,6 @@ public class principal extends ActionBarActivity {
             if (id == R.id.action_acerca)
                 Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
         }catch(Exception ex){
-
             Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
         }
 
