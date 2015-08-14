@@ -23,13 +23,8 @@ public class MainActivity extends ActionBarActivity {
 
                 Intent i= new Intent(MainActivity.this,principal.class);
                 startActivity(i);
-                //mire emanuel si necesita pasar referencias el intent tiene un metodo putextras, reviselo pasa arreglos string lo que sea
-
-
-
             }
         });
-
 
         cmdDivisit.setOnClickListener(new View.OnClickListener() {
             @Override
