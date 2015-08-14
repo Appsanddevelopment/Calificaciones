@@ -1,7 +1,7 @@
 <resources>
     <!-- Nombre de la aplicación -->
     <string name="app_name">Calificaciones</string>
-    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_principal">Clacular notas</string>
     <string name="title_activity_divisist">Divisist</string>
 
     <!-- Menú de la app -->
