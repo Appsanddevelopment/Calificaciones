@@ -53,8 +53,8 @@ public class principal extends ActionBarActivity {
                     definitiva.setText(String.valueOf(result.get(1)));
 
                     float mini=Float.parseFloat(minima.getText().toString());
-                    float notafinal=Float.parseFloat(c.calcularNotafinal(n1,n2,n3,mini));
-                   float lleva=Float.parseFloat(result.get(0));
+                    float notafinal=Float.parseFloat(c.calcularNotafinal(n1, n2, n3, mini));
+                    float lleva=Float.parseFloat(result.get(0));
 
                     if((lleva)<1.5f){
                         Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debio cancelar ",Toast.LENGTH_SHORT).show();
@@ -63,31 +63,26 @@ public class principal extends ActionBarActivity {
 
                     if((lleva)>2.95f){
                         Toast.makeText(getBaseContext(),"Felicidades ya pasaste , pase por su premio",Toast.LENGTH_SHORT).show();
-return;
+                        return;
                     }
-
 
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
                     return;
                 }
-
-
-
             }
         });
 
         cmddefinitiva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(getBaseContext(), "Esto no esta conectado", Toast.LENGTH_LONG).show();
             }
         });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_principal, menu);
         return true;
     }
@@ -106,22 +101,21 @@ return;
                 examen.setText("");
                 examen.invalidate();
              return true;
-
             }
 
-            if (id == R.id.action_volver) {
+            if (id == R.id.action_volver)
                 super.onBackPressed();
-            }
 
             if (id == R.id.action_salir) {
                 Intent act = new Intent(Intent.ACTION_MAIN);
                 finish();
             }
 
-            if (id == R.id.action_acerca)
-                Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
+            if (id == R.id.action_acerca){
+                Intent i = new Intent(principal.this, Acerca_de.class);
+                startActivity(i);
+            }
         }catch(Exception ex){
-
             Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
         }
 

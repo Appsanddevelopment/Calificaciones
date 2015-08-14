@@ -12,12 +12,12 @@ import android.widget.Toast;
 
 import java.util.prefs.Preferences;
 
-
 public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Button cmdabrir = (Button)findViewById(R.id.cmdabrir2);
         Button cmdDivisit=(Button)findViewById(R.id.cmdDivisit);
 
@@ -54,12 +54,10 @@ public class MainActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        //Cierra la aplicación
         if (id == R.id.action_salir)
             System.exit(0);
 
-        //Resultado de tocar un "Acerca de"
-        else if(id==R.id.action_acerca)
+        if(id==R.id.action_acerca)
             Toast.makeText(getBaseContext(),"Creado por Jairo y Emanuel",Toast.LENGTH_SHORT).show();
 
         return super.onOptionsItemSelected(item);
