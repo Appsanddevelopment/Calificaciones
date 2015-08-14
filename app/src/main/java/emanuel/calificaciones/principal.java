@@ -16,6 +16,7 @@ import Controlador.Controlador;
 public class principal extends ActionBarActivity {
 
     Button cmdcalcular;
+    Button cmddefinitiva;
     Controlador c = new Controlador();
     EditText nota1, nota2, nota3, examen;
     float n1 = (float) 0.0;
@@ -28,7 +29,7 @@ public class principal extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-
+        cmddefinitiva=(Button)findViewById(R.id.calcularDefinitiva);
         cmdcalcular=(Button)findViewById(R.id.cmdCalcular70);
         cmdcalcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,18 +55,28 @@ public class principal extends ActionBarActivity {
                     float notafinal=Float.parseFloat(c.calcularNotafinal(n1,n2,n3,mini));
 
                     if(notafinal<2.95){
-                        Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debería cancelar :v",Toast.LENGTH_LONG).show();
-                        return;
+                        Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debio cancelar :v",Toast.LENGTH_SHORT).show();
+return;
                     }
 
                     if((n1+n2+n3)>=2.95f){
-                        Toast.makeText(getBaseContext(),"Felicidades ya pasaste, pase por su premio",Toast.LENGTH_LONG).show();
-                        return;
+                        Toast.makeText(getBaseContext(),"Felicidades ya pasaste , pase por su premio",Toast.LENGTH_SHORT).show();
+return;
                     }
                 }catch(Exception ex){
-                    Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
                     return;
                 }
+
+
+
+            }
+        });
+
+        cmddefinitiva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }
@@ -87,6 +98,7 @@ public class principal extends ActionBarActivity {
                 nota3.setText("");
                 examen.setText("");
                return true;
+
             }
 
             if (id == R.id.action_volver) {
@@ -101,6 +113,7 @@ public class principal extends ActionBarActivity {
             if (id == R.id.action_acerca)
                 Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
         }catch(Exception ex){
+
             Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
         }
 
