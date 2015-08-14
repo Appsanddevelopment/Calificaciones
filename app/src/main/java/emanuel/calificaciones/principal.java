@@ -41,10 +41,7 @@ public class principal extends ActionBarActivity {
                     n1 = Float.parseFloat(nota1.getText().toString());
                     n2 = Float.parseFloat(nota2.getText().toString());
                     n3 = Float.parseFloat(nota3.getText().toString());
-                }catch(Exception ex){
-                    Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
-                    return;
-                }finally{
+
                     ArrayList<String> result = c.calcularNotaFalta(n1, n2, n3);
                     minima = (TextView) findViewById(R.id.lblNotaExamen);
                     minima.setText(String.valueOf(result.get(1)));
@@ -57,14 +54,17 @@ public class principal extends ActionBarActivity {
                     float notafinal=Float.parseFloat(c.calcularNotafinal(n1,n2,n3,mini));
 
                     if(notafinal<2.95){
-                        Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debería cancelar :v",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debería cancelar :v",Toast.LENGTH_LONG).show();
                         return;
                     }
 
                     if((n1+n2+n3)>=2.95f){
-                        Toast.makeText(getBaseContext(),"Felicidades ya pasaste, pase por su premio",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(),"Felicidades ya pasaste, pase por su premio",Toast.LENGTH_LONG).show();
                         return;
                     }
+                }catch(Exception ex){
+                    Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_SHORT).show();
+                    return;
                 }
             }
         });
@@ -87,7 +87,6 @@ public class principal extends ActionBarActivity {
                 nota3.setText("");
                 examen.setText("");
                return true;
-
             }
 
             if (id == R.id.action_volver) {

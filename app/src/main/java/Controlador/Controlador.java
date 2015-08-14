@@ -16,11 +16,10 @@ public class Controlador {
 
     }
 
-    //YA DEBERIA FUNCIONAR AL LLAMAR LOS METODOS.
     /*
-    ARREGLO
-        1)Posición lo que lleva
-        2)Posición lo que necesita
+        ARREGLO
+            1)Posición lo que lleva
+            2)Posición lo que necesita
     */
     public ArrayList<String> calcularNotaFalta(float n1,float n2,float n3){
         Negocio n=getbussinesInstance.ObtenerNegocio();

@@ -1,8 +1,9 @@
 <resources>
     <!-- Nombre de la aplicación -->
     <string name="app_name">Calificaciones</string>
-    <string name="title_activity_principal">Clacular notas</string>
+    <string name="title_activity_principal">Calcular notas</string>
     <string name="title_activity_divisist">Divisist</string>
+    <string name="title_activity_acerca">Acerca de Calificaciones</string>
 
     <!-- Menú de la app -->
     <string name="mn_acerca">Acerca de</string>
@@ -10,7 +11,7 @@
     <string name="mn_Salir">Salir</string>
     <string name="mn_volver">Volver</string>
 
-    <!-- String's del activity principal -->
+    <!-- String's del activity calcular notas -->
     <string name="string_text1">Nota 1</string>
     <string name="string_text2">Nota 2</string>
     <string name="string_text3">Nota 3</string>
@@ -25,8 +26,4 @@
     <string name="buttom_calcular">Calcular</string>
     <string name="cmd_CalcularDef">Calcular definitiva</string>
     <string name="cmd_divisist">Divisist</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-
 </resources>
