@@ -22,11 +22,7 @@
         </activity>
         <activity
             android:name=".divisist"
-            android:label="@string/title_activity_divisist" >
-        </activity>
-        <activity
-            android:name=".Acerca_de"
-            android:label="@string/title_activity_acerca" >
+            android:label="@string/title_activity_divisist">
         </activity>
     </application>
 

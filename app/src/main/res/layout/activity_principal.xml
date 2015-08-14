@@ -19,6 +19,15 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
 
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/string_title"
+            android:id="@+id/textView7"
+            android:textColor="#ff1460ff"
+            android:textSize="25dp"
+            android:gravity="center" />
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -66,8 +75,7 @@
                 android:ems="10"
                 android:id="@+id/txtNota1"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:hint="@string/string_notaDefault" />
+                android:gravity="center"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -76,8 +84,7 @@
                 android:ems="10"
                 android:id="@+id/txtNota2"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:hint="@string/string_notaDefault" />
+                android:gravity="center"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -86,8 +93,7 @@
                 android:ems="10"
                 android:id="@+id/txtNota3"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:hint="@string/string_notaDefault" />
+                android:gravity="center"/>
         </TableRow>
 
         <Button
@@ -167,8 +173,7 @@
                 android:ems="0"
                 android:id="@+id/txtExamen"
                 android:layout_weight="0.74"
-                android:gravity="center"
-                android:hint="@string/string_notaDefault" />
+                android:gravity="center"/>
         </LinearLayout>
 
         <Button

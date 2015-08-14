@@ -23,8 +23,13 @@ public class MainActivity extends ActionBarActivity {
 
                 Intent i= new Intent(MainActivity.this,principal.class);
                 startActivity(i);
+                //mire emanuel si necesita pasar referencias el intent tiene un metodo putextras, reviselo pasa arreglos string lo que sea
+
+
+
             }
         });
+
 
         cmdDivisit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,12 +39,14 @@ public class MainActivity extends ActionBarActivity {
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
+
             }
         });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -53,10 +60,15 @@ public class MainActivity extends ActionBarActivity {
             System.exit(0);
 
         //Resultado de tocar un "Acerca de"
+<<<<<<< HEAD
         else if(id==R.id.action_acerca){
             Intent i = new Intent(MainActivity.this, Acerca_de.class);
             startActivity(i);
         }
+=======
+        else if(id==R.id.action_acerca)
+            Toast.makeText(getBaseContext(),"Creado por Jairo y Emanuel",Toast.LENGTH_SHORT).show();
+>>>>>>> cdd850958cd004b2ee1dff1bfddd8cf9b7167355
 
         return super.onOptionsItemSelected(item);
     }
