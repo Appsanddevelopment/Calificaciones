@@ -26,12 +26,7 @@
     <string name="cmd_CalcularDef">Calcular definitiva</string>
     <string name="cmd_divisist">Divisist</string>
 
-<<<<<<< HEAD
-    <!-- Creditos -->
-    <string name ="Autores">Jairo Andrés Castañeda Pachecho\ \n\ \               y\ \n\ \Emanuel Martínez Pinzón</string>
-=======
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
->>>>>>> cdd850958cd004b2ee1dff1bfddd8cf9b7167355
 </resources>

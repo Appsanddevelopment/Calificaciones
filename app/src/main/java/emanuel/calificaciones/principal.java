@@ -38,6 +38,7 @@ public class principal extends ActionBarActivity {
                     nota1 = (EditText) findViewById(R.id.txtNota1);
                     nota2 = (EditText) findViewById(R.id.txtNota2);
                     nota3 = (EditText) findViewById(R.id.txtNota3);
+                    examen=(EditText)findViewById(R.id.txtExamen);
 
                     n1 = Float.parseFloat(nota1.getText().toString());
                     n2 = Float.parseFloat(nota2.getText().toString());
@@ -53,16 +54,19 @@ public class principal extends ActionBarActivity {
 
                     float mini=Float.parseFloat(minima.getText().toString());
                     float notafinal=Float.parseFloat(c.calcularNotafinal(n1,n2,n3,mini));
+                   float lleva=Float.parseFloat(result.get(0));
 
-                    if(notafinal<2.95){
-                        Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debio cancelar :v",Toast.LENGTH_SHORT).show();
-return;
+                    if((lleva)<1.5f){
+                        Toast.makeText(getBaseContext(),"Amig@ lamentamos decirle que usted  ni sacando 5 pasa , debio cancelar ",Toast.LENGTH_SHORT).show();
+                        return;
                     }
 
-                    if((n1+n2+n3)>=2.95f){
+                    if((lleva)>2.95f){
                         Toast.makeText(getBaseContext(),"Felicidades ya pasaste , pase por su premio",Toast.LENGTH_SHORT).show();
 return;
                     }
+
+
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar los datos", Toast.LENGTH_LONG).show();
                     return;
@@ -94,25 +98,28 @@ return;
         try {
             if (id == R.id.action_limpiar) {
                 nota1.setText("");
+                nota1.invalidate();
                 nota2.setText("");
+                nota2.invalidate();
                 nota3.setText("");
+                nota3.invalidate();
                 examen.setText("");
-               return true;
+                examen.invalidate();
+             return true;
 
             }
 
-            if (id == R.id.action_volver)
+            if (id == R.id.action_volver) {
                 super.onBackPressed();
+            }
 
             if (id == R.id.action_salir) {
-                Intent act = new Intent(Intent.CATEGORY_HOME);
+                Intent act = new Intent(Intent.ACTION_MAIN);
                 finish();
             }
 
-            if (id == R.id.action_acerca){
-                Intent i = new Intent(principal.this, Acerca_de.class);
-                startActivity(i);
-            }
+            if (id == R.id.action_acerca)
+                Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
         }catch(Exception ex){
 
             Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
