@@ -89,17 +89,18 @@ public class principal extends ActionBarActivity {
                return true;
             }
 
-            if (id == R.id.action_volver) {
+            if (id == R.id.action_volver)
                 super.onBackPressed();
-            }
 
             if (id == R.id.action_salir) {
-                Intent act = new Intent(Intent.ACTION_MAIN);
+                Intent act = new Intent(Intent.CATEGORY_HOME);
                 finish();
             }
 
-            if (id == R.id.action_acerca)
-                Toast.makeText(getBaseContext(), "Creado por Jairo y Emanuel", Toast.LENGTH_LONG).show();
+            if (id == R.id.action_acerca){
+                Intent i = new Intent(principal.this, Acerca_de.class);
+                startActivity(i);
+            }
         }catch(Exception ex){
             Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
         }

@@ -8,10 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-
-import java.util.prefs.Preferences;
-
 
 public class MainActivity extends ActionBarActivity {
     @Override
@@ -58,8 +54,6 @@ public class MainActivity extends ActionBarActivity {
 
         //Resultado de tocar un "Acerca de"
         else if(id==R.id.action_acerca){
-            Toast.makeText(getBaseContext(),"Creado por Jairo y Emanuel",Toast.LENGTH_SHORT).show();
-
             Intent i = new Intent(MainActivity.this, Acerca_de.class);
             startActivity(i);
         }
