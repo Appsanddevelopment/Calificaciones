@@ -11,7 +11,7 @@ import utylity.utyliti;
  */
 public class Controlador {
 
-
+    /* Patron singleton**/
     public Controlador(){
 
     }

@@ -8,6 +8,8 @@ import Logica.CalculoM;
 /**
  * Created by macaco on 08/07/2015.
  */
+
+/* clase del negocio dle proyecto**/
 public class Negocio {
 
     private CalculoM c;

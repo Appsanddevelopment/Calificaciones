@@ -5,6 +5,8 @@ import Negocio.Negocio;
 /**
  * Created by macaco on 08/07/2015.
  */
+
+/* Patron singleton**/
 public class getbussinesInstance {
 
     private static Negocio n;
