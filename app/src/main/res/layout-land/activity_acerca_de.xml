@@ -26,10 +26,7 @@
         android:text="Aplicación desarrollada para permitirle calcular sus notas en el semestre."
         android:id="@+id/textView13"
         android:layout_below="@+id/textView14"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="100dp"
@@ -43,25 +40,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jairo Andrés Castañeda Pacheco y Emanuel Martínez Pinzón"
+        android:text="Jairo Andrés Castañeda Pacheco y Emanuel Martínez Pinzón en LabApp's"
         android:id="@+id/textView19"
         android:layout_below="@+id/textView10"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contactar"
-        android:id="@+id/button"
-        android:layout_above="@+id/button3"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volver"
-        android:id="@+id/button2"
+        android:text="@string/buttom_contactar"
+        android:id="@+id/cmdContactar"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttom_volver"
+        android:id="@+id/cmdVolver"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -69,9 +65,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver código de la aplicación"
-        android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
+        android:text="@string/buttom_source"
+        android:id="@+id/cmdSource"
+        android:layout_below="@+id/cmdContactar"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -82,4 +78,12 @@
         android:layout_below="@+id/textView13"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttom_web"
+        android:id="@+id/cmdVisitarWeb"
+        android:layout_alignTop="@+id/cmdVolver"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

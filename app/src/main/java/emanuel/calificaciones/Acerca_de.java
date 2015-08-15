@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class Acerca_de extends ActionBarActivity {
 
-    Button cmdcontactar, cmdSource, cmdVolver;
+    Button cmdcontactar, cmdSource, cmdVolver, cmdWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class Acerca_de extends ActionBarActivity {
         cmdcontactar = (Button) findViewById(R.id.cmdContactar);
         cmdSource = (Button) findViewById(R.id.cmdSource);
         cmdVolver = (Button) findViewById(R.id.cmdVolver);
+        cmdWeb = (Button) findViewById(R.id.cmdVisitarWeb);
 
         cmdcontactar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +34,7 @@ public class Acerca_de extends ActionBarActivity {
         cmdSource.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/Appsanddevelopment/Calificaciones";
+                String url = "https://github.com/LabAppsSBG/Calificaciones";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
@@ -44,7 +45,20 @@ public class Acerca_de extends ActionBarActivity {
         cmdVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            finish();
+
+                finish();
+
+            }
+        });
+
+        cmdWeb.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String url = "http://labapps.softwaregratis.org";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
     }

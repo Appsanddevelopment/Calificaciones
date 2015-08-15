@@ -26,7 +26,7 @@
         </activity>
         <activity
             android:name=".Acerca_de"
-            android:label="@string/mn_acerca">
+            android:label="@string/title_activity_acerca">
         </activity>
     </application>
 
