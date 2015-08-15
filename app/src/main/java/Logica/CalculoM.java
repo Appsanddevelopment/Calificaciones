@@ -13,8 +13,8 @@ public class CalculoM {
     }
 /*Calcular lo que falta para pasar:
 metodo que me va a permitir obtener en un arreglo de dos posciones la nota que lleva y la nota que le falta
-[0]ire la nota que lleva
-[1]ira la nota falta (osea lo que debe sacar en el final si ya paso o si no alcanza a pasar sacando  5.0 , el resultaod sera 0.0 ya que la validaicon se hace
+[0]ira la nota que lleva
+[1]ira la nota falta (osea lo que debe sacar en el final si ya paso o si no alcanza a pasar sacando  5.0 , el resultado sera 0.0 ya que la validacion se hace
 hasta 5)
 *
 * **/
@@ -55,7 +55,7 @@ hasta 5)
         return 0.0f;
     }
 /*hallar numero
- le envio lo que necesito para pasar en terminos generales ejemplo(0. , 1, 0.9) y hallo la nota que multiplicada por 0.3 me da ese resultaod o se acerca mas a ese
+ le envio lo que necesito para pasar en terminos generales ejemplo(0. 2, 1, 0.9) y hallo la nota que multiplicada por 0.3 me da ese resultaodo se acerca mas a ese
  resultado
 *
 * **/
@@ -73,7 +73,7 @@ float n3=n2*0.3f;
         return 0.0f;
     }
 /*
-* me calcula l anota final poniendo todas las notas que ha sacado , incluyendo la del final (obligatoria)
+* me calcula la nota final poniendo todas las notas que ha sacado , incluyendo la del final (obligatoria)
 * **/
     public float calcularnotafinal(float n1,float n2,float n3,float Nfinal){
         float nota1=n1*0.23f;
