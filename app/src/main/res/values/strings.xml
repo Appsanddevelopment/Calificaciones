@@ -1,16 +1,6 @@
 <resources>
     <!-- Nombre de la aplicación -->
     <string name="app_name">Calificaciones</string>
-    <string name="title_activity_principal">Principal</string>
-    <string name="title_activity_divisist">Divisist</string>
-    <string name="title_activity_acerca">Acerca de Calificaciones</string>
-    <string name="title_activity_activity_calcular_notas">activity_calcularNotas</string>
-
-    <!-- Menú de la app -->
-    <string name="mn_acerca">Acerca de</string>
-    <string name="mn_limpiar">Limpiar campos</string>
-    <string name="mn_Salir">Salir</string>
-    <string name="mn_volver">Volver</string>
 
     <!-- String's del activity principal -->
     <string name="string_text1">Nota 1</string>
@@ -22,11 +12,8 @@
     <string name="string_NotaExamen">Nota del examen</string>
     <string name="string_definitiva">Nota definitiva</string>
     <string name="string_notaDefault">0.0</string>
-
-    <!-- Botones -->
     <string name="buttom_calcular">Calcular</string>
     <string name="cmd_CalcularDef">Calcular definitiva</string>
-    <string name="cmd_divisist">Divisist</string>
 
     <!-- Acerca de -->
     <string name="buttom_contactar">Contactar</string>
@@ -34,16 +21,13 @@
     <string name="buttom_web">Visitar la página web</string>
     <string name="buttom_volver">Volver</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="title_activity_activity_start">ActivityStart</string>
-    <string name="title_activity_pureba">Pureba</string>
-    <string name="title_activity_actividad__principal">Calificaciones</string>
-
     <!-- Mensajes de la actividad principal  -->
     <string name="title_tab1">Bienvenido</string>
     <string name="title_tab2">Calcular notas</string>
     <string name="title_tab3">Divisist</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
