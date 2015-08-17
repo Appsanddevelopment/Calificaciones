@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Acerca_de"
+            android:label="@string/title_activity_acerca">
+        </activity>
+
+        <activity
+            android:name=".divisist"
+            android:label="@string/title_activity_acerca">
+        </activity>
+
+        <activity
+            android:name=".principal"
+            android:label="@string/title_activity_acerca">
+        </activity>
     </application>
 
 </manifest>
