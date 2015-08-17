@@ -1,4 +1,4 @@
-package emanuel.calificaciones;
+package LabApps.calificaciones;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;

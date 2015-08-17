@@ -1,6 +1,8 @@
-package emanuel.calificaciones;
+package LabApps.calificaciones;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -25,6 +27,7 @@ public class principal extends ActionBarActivity {
     float ex = (float) 0.0;
     TextView minima, lleva, definitiva;
 
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
