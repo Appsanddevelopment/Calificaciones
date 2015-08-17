@@ -18,9 +18,4 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
-    <item android:id="@+id/action_acerca"
-        android:title="@string/mn_acerca"
-        android:orderInCategory="100"
-        app:showAsAction="never" />
-
 </menu>
