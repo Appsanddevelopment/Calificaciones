@@ -1,6 +1,7 @@
-package emanuel.calificaciones;
+package LabApps.calificaciones;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -111,10 +112,6 @@ public class principal extends ActionBarActivity {
                 finish();
             }
 
-            if (id == R.id.action_acerca){
-                Intent i = new Intent(principal.this, Acerca_de.class);
-                startActivity(i);
-            }
         }catch(Exception ex){
             Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
         }
