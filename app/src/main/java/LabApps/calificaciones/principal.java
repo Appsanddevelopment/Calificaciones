@@ -1,6 +1,5 @@
 package LabApps.calificaciones;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -27,7 +26,6 @@ public class principal extends ActionBarActivity {
     float ex = (float) 0.0;
     TextView minima, lleva, definitiva;
 
-    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,10 +112,6 @@ public class principal extends ActionBarActivity {
                 finish();
             }
 
-            if (id == R.id.action_acerca){
-                Intent i = new Intent(principal.this, Acerca_de.class);
-                startActivity(i);
-            }
         }catch(Exception ex){
             Toast.makeText(getBaseContext(),"excepcion"+ex.getMessage(),Toast.LENGTH_SHORT).show();
         }
