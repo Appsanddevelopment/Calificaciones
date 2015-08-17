@@ -6,7 +6,10 @@ import java.util.ArrayList;
  * Created by macaco on 08/07/2015.
  */
 public class utyliti {
-
+/* clase utilizada para pasar todo a string por eso es una clase estatica
+*
+*
+* **/
     public static  ArrayList<String> converTonfalta(ArrayList<Float> n){
         ArrayList<String >arreglo=new ArrayList<>();
 
