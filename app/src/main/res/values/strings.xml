@@ -20,7 +20,7 @@
     <string name="buttom_caclcular">Calcular</string>
 
         <!-- String's para el menú de MainActivity -->
-        <string name="action_about">Acerca de</string>
+        <string name="action_about">Información</string>
         <string name="action_clear">Limpias campos</string>
 
     <!-- Recursos de String's para InfoActivity -->
@@ -53,7 +53,7 @@
     <string name="string_twitter">\@labappsSBG</string>
 
     <!-- Tab3 - Licencia y terminos de código -->
-    <string name="string_licencia">Calificaciones &amp;&amp; GPL v3</string>
+    <string name="string_licencia">GPL v3</string>
     <string name="string_descripcionlicencia">
         Aparte de poder utilizar la aplicación, usted puede ver y modificar el codigo incluso para
         fines privados reconociendo en todo caso a los respectivos autores y a LabApps como plataforma

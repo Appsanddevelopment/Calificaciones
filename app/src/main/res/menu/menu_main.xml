@@ -5,8 +5,7 @@
 
     <item android:id="@+id/action_cleanField"
         android:title="@string/action_clear"
-        android:orderInCategory="100"
-        android:showAsAction="never"/>
+        android:orderInCategory="100"/>
 
     <item android:id="@+id/action_about"
         android:title="@string/action_about"
