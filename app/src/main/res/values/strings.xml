@@ -1,4 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Nombre de la aplicación -->
+    <!-- Recursos del Manifest -->
     <string name="app_name">Calificaciones</string>
+    <string name="title_activity_main">Calificaciones</string>
+    <string name="title_activity_info">Información</string>
+    <string name="subtitle_activity_info">Acerca de esta aplicación</string>
+
+    <!-- Recursos de String's para la MainActivity -->
+    <!-- Tab1 - Calculadora de notas -->
+    <string name="string_title_label">Calcule sus notas</string>
+    <string name="string_corte1">Primer corte</string>
+    <string name="string_corte2">Segundo corte</string>
+    <string name="string_corte3">Tercer corte</string>
+    <string name="string_70">70%</string>
+    <string name="string_notaMinima">Nota minima</string>
+    <string name="string_notaDefault">0.0</string>
+    <string name="string_NotaExamen">Nota del examen</string>
+    <string name="string_definitiva">Nota definitiva</string>
+    <string name="buttom_caclcular">Calcular</string>
+
+        <!-- String's para el menú de MainActivity -->
+        <string name="action_about">Acerca de</string>
+        <string name="action_clear">Limpias campos</string>
+
+    <!-- Recursos de String's para InfoActivity -->
+    <!-- Tab1 - Creditos -->
+    <string name="string_creditos">Créditos</string>
+    <string name="string_version">Versión 1.0</string>
+    <string name="string_descripcionCreditos">
+        Esta aplicación ha sido desarrollada en LabApps con fines
+        comunitarios no lucrativos, con calificaciones usted puede calcular sus notas de la
+        universidad así como ingresar al portal institucional.
+    </string>
+    <string name="string_autores">
+        Desarrollo: \n
+        Jairo Andrés Castañeda Pacheco \n
+        Emanuel Martínez Pinzón. \n\n
+        Diseño: \n
+        Jeisson Eduardo Rangel Baez
+    </string>
+    <string name="string_lic">Derechos ligados a la licencia de uso y del código.</string>
+
+    <!-- Tab2 - Contacto y correo -->
+    <string name="string_contacto">Contacto</string>
+    <string name="string_descripcionContacto">
+        Usted puede contactarnos o visitar alguna de nuestras redes sociales para conocer más sobre
+        nuestros proyectos o participar en alguno de ellos.
+    </string>
+    <string name="string_correo">labapps.sbg@gmail.com</string>
+    <string name="string_web">labapps.softwaregratis.org</string>
+    <string name="string_facebook">labappsSGB</string>
+    <string name="string_twitter">\@labappsSBG</string>
+
+    <!-- Tab3 - Licencia y terminos de código -->
+    <string name="string_licencia">Calificaciones &amp;&amp; GPL v3</string>
+    <string name="string_descripcionlicencia">
+        Aparte de poder utilizar la aplicación, usted puede ver y modificar el codigo incluso para
+        fines privados reconociendo en todo caso a los respectivos autores y a LabApps como plataforma
+        de desarrollo comunitario.
+    </string>
+    <string name="string_vercodigo">Ver código</string>
+    <string name="string_derechos">Se pueden realizar cambios sin previo aviso.</string>
+
 </resources>
