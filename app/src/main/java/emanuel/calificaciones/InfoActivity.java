@@ -31,7 +31,7 @@ import java.util.List;
 
 public class InfoActivity extends AppCompatActivity {
 
-    TextView verWeb, sendEmail, facebook, twitter, verCodigo;
+    TextView verWeb, sendEmail, facebook, twitter, verCodigo, verLicencia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,6 +113,18 @@ public class InfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String url = "https://github.com/LabAppsSBG/Calificaciones";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
+        verWeb = (TextView) findViewById(R.id.verLicencia);
+        verWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.gnu.org/licenses/gpl.txt";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));

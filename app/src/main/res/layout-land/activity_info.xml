@@ -29,22 +29,6 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- Aquí inicia el contenido de la tab1 -->
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -155,7 +139,6 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true" />
                     </RelativeLayout>
-
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -344,45 +327,44 @@
                                     android:layout_height="wrap_content"
                                     android:weightSum="1">
 
-                                    <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:id="@+id/githublogo"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/github_logo"
-                                        android:layout_gravity="center"
-                                        android:layout_marginLeft="20dp"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/string_vercodigo"
-                                        android:id="@+id/verCodigo"
-                                        android:gravity="center"
-                                        android:layout_marginLeft="3dp"
-                                        android:layout_alignTop="@+id/githublogo"
-                                        android:layout_toRightOf="@+id/githublogo"
-                                        android:layout_toEndOf="@+id/githublogo"
-                                        android:textColor="#009F8A"/>
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="19dp"
+                                            android:layout_height="19dp"
+                                            android:id="@+id/githublogo"
+                                            android:src="@drawable/github_logo"
+                                            android:layout_marginLeft="30dp"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/string_vercodigo"
+                                            android:id="@+id/verCodigo"
+                                            android:textColor="#009F8A" />
+
+                                        <ImageView
+                                            android:layout_width="19dp"
+                                            android:layout_height="19dp"
+                                            android:id="@+id/gpl_logo"
+                                            android:src="@drawable/gpl_logo"
+                                            android:layout_marginLeft="70dp"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/string_verLicencia"
+                                            android:id="@+id/verLicencia"
+                                            android:textColor="#009F8A" />
+
+                                    </LinearLayout>
 
                                 </RelativeLayout>
                             </LinearLayout>
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="300dp"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:id="@+id/derechos"
-                            android:ellipsize="none"
-                            android:scrollHorizontally="false"
-                            android:text="@string/string_derechos"
-                            android:textIsSelectable="false"
-                            android:textSize="10dp"
-                            android:layout_alignParentBottom="true"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginBottom="5dp" />
-
                     </RelativeLayout>
                 </RelativeLayout>
             </FrameLayout>

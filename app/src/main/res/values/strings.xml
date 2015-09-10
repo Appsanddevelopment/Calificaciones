@@ -8,7 +8,7 @@
 
     <!-- Recursos de String's para la MainActivity -->
     <!-- Tab1 - Calculadora de notas -->
-    <string name="string_title_label">Calcule sus notas</string>
+    <string name="string_title_label">Calcular notas</string>
     <string name="string_corte1">Primer corte</string>
     <string name="string_corte2">Segundo corte</string>
     <string name="string_corte3">Tercer corte</string>
@@ -33,11 +33,11 @@
         universidad así como ingresar al portal institucional.
     </string>
     <string name="string_autores">
-        Desarrollo: \n
-        Jairo Andrés Castañeda Pacheco \n
-        Emanuel Martínez Pinzón. \n\n
-        Diseño: \n
-        Jeisson Eduardo Rangel Baez
+        <b>Desarrollo: \n</b>
+        <i>Jairo Andrés Castañeda Pacheco \n
+        Emanuel Martínez Pinzón. </i> \n\n
+        <b>Diseño: \n</b>
+        <i>Jeisson Eduardo Rangel Baez </i>
     </string>
     <string name="string_lic">Derechos ligados a la licencia de uso y del código.</string>
 
@@ -55,11 +55,12 @@
     <!-- Tab3 - Licencia y terminos de código -->
     <string name="string_licencia">GPL v3</string>
     <string name="string_descripcionlicencia">
-        Aparte de poder utilizar la aplicación, usted puede ver y modificar el codigo incluso para
-        fines privados reconociendo en todo caso a los respectivos autores y a LabApps como plataforma
-        de desarrollo comunitario.
+        Esta aplicación esta licenciada bajo la licencia pública general en su versión 3, esto le permite
+        hacer uso de la aplicación con cualquier fin, estudiar su código, modificarla y redistribuirla
+        sin restricciones, así cómo las demás libertades y responsabilidades que le otroga la licencia.
     </string>
     <string name="string_vercodigo">Ver código</string>
+    <string name="string_verLicencia">Ver licencia</string>
     <string name="string_derechos">Se pueden realizar cambios sin previo aviso.</string>
 
 </resources>
