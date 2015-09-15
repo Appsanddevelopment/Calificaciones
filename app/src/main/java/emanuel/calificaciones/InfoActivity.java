@@ -67,9 +67,69 @@ public class InfoActivity extends AppCompatActivity {
 
         tabs.setCurrentTab(0);
 
+        //Acciones para la tab2
+        verWeb = (TextView) findViewById(R.id.textWeb);
+        verWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "http://labapps.softwaregratis.org/";
 
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
 
+        sendEmail = (TextView) findViewById(R.id.textEmail);
+        sendEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                enviarEmail();
+            }
+        });
 
+        facebook = (TextView) findViewById(R.id.textFb);
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Intent facebookIntent = getFacebookIntent();
+                startActivity(facebookIntent);
+            }
+        });
+
+        twitter = (TextView) findViewById(R.id.textTw);
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Intent twitterIntent = getTwitterIntent();
+                startActivity(twitterIntent);
+            }
+        });
+
+        //Acciones para la tab3
+        verCodigo = (TextView) findViewById(R.id.verCodigo);
+        verCodigo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://github.com/LabAppsSBG/Calificaciones";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
+        verWeb = (TextView) findViewById(R.id.verLicencia);
+        verWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.gnu.org/licenses/gpl.txt";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
     }
 
     private void enviarEmail(){

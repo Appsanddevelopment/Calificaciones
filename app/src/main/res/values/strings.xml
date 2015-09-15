@@ -59,6 +59,9 @@
         hacer uso de la aplicación con cualquier fin, estudiar su código, modificarla y redistribuirla
         sin restricciones, así cómo las demás libertades y responsabilidades que le otroga la licencia.
     </string>
+    <string name="string_descripcionlicencia2.3">
+        Esta aplicación esta licenciada bajo la licencia pública general en su versión 3.
+    </string>
     <string name="string_vercodigo">Ver código</string>
     <string name="string_verLicencia">Ver licencia</string>
     <string name="string_derechos">Se pueden realizar cambios sin previo aviso.</string>
