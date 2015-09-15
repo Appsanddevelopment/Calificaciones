@@ -39,7 +39,7 @@
         <b>Diseño: \n</b>
         <i>Jeisson Eduardo Rangel Baez </i>
     </string>
-    <string name="string_lic">Derechos ligados a la licencia de uso y del código.</string>
+    <string name="string_lic">Derechos ligados a la licencia de uso.</string>
 
     <!-- Tab2 - Contacto y correo -->
     <string name="string_contacto">Contacto</string>
@@ -62,5 +62,9 @@
     <string name="string_vercodigo">Ver código</string>
     <string name="string_verLicencia">Ver licencia</string>
     <string name="string_derechos">Se pueden realizar cambios sin previo aviso.</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                <!-- Aquí inicia el contenido de la tab1 -->
+                    <!-- Aquí inicia el contenido de la tab1 -->
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

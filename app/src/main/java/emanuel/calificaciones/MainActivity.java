@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         spec=tabs.newTabSpec("tab2");
         spec.setContent(R.id.tab2);
         spec.setIndicator("",
-                res.getDrawable(R.drawable.clipboard));
+                res.getDrawable(R.drawable.icon_divisist));
         tabs.addTab(spec);
 
         TabHost.TabSpec finalSpec = spec;
@@ -125,9 +125,7 @@ public class MainActivity extends AppCompatActivity {
         wb.setWebViewClient(new WebViewClient());
 
         wb.loadUrl("http://www.divisist.ufps.edu.co");
-
         wb.getSettings().setBuiltInZoomControls(true);
-        wb.getSettings().setDisplayZoomControls(true);
     }
 
     @Override
