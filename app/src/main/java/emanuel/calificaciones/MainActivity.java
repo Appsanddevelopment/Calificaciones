@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import Controlador.Controlador;
 
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     Controlador c = new Controlador();
     float c1, c2, c3, ex = (float) 0.0;
+    DecimalFormat d = new DecimalFormat("####.##");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,10 +86,32 @@ public class MainActivity extends AppCompatActivity {
                     ArrayList<String> nota70 = c.calcularNotaFalta(c1, c2, c3);
 
                     lleva = (TextView) findViewById(R.id.lblNotaMateria);
-                    lleva.setText(String.valueOf(nota70.get(0)));
+
+
+                   Double notaff = Double.parseDouble((nota70.get(0)));
+                    String nota= d.format(notaff);
+                    //mensajes cuando se calculo lo que le falta
+if(notaff<1.5){
+    Toast.makeText(getBaseContext(),"yo de usted iria cancelando por que ni con 5 pasa",Toast.LENGTH_LONG).show();
+}else if(notaff>1.5 && notaff<=1.7){
+    Toast.makeText(getBaseContext(),"tienes las misma posibilidades de pasar que de conseguir novia :v",Toast.LENGTH_LONG).show();
+
+}else if(notaff>=3.0){
+    Toast.makeText(getBaseContext(),"Feliciades pasaste, cada vez mas cerca del carrito de bonice :v",Toast.LENGTH_LONG).show();
+
+}
+
+
+
+
+
+                    lleva.setText(nota);
 
                     falta = (TextView) findViewById(R.id.lblNotaExamen);
-                    falta.setText(String.valueOf(nota70.get(1)));
+
+                    double notaff2 = Double.parseDouble((nota70.get(1)));
+                    String nota2= d.format(notaff2);
+                    falta.setText(nota2);
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar todos los datos", Toast.LENGTH_LONG).show();
                 }
@@ -109,9 +134,22 @@ public class MainActivity extends AppCompatActivity {
                     ex = Float.parseFloat(examen.getText().toString());
 
                     String def = c.calcularNotafinal(c1, c2, c3, ex);
+                    double deff= Double.parseDouble(def);
+
+
+                    String  finall=d.format(deff);
+
+
 
                     definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
-                    definitiva.setText(String.valueOf(def));
+                    definitiva.setText(finall);
+//mensajes para nota final
+                    if(deff<3.0){
+                        Toast.makeText(getBaseContext(),"baia baia debiste cancelar :v",Toast.LENGTH_LONG).show();
+
+                    }
+
+                    Toast.makeText(getBaseContext(),finall,Toast.LENGTH_SHORT).show();
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar todos los datos", Toast.LENGTH_LONG).show();
                 }

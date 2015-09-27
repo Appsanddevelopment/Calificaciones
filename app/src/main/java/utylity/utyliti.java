@@ -1,5 +1,6 @@
 package utylity;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -20,10 +21,12 @@ public class utyliti {
      */
     public static  ArrayList<String> converTonfalta(ArrayList<Float> n){
         ArrayList<String >arreglo=new ArrayList<>();
+        DecimalFormat d = new DecimalFormat("###.##");
 
         for(int i=0;i<n.size();i++){
+            String formateada=d.format(n.get(i));
             String nfinal=converToString(n.get(i));
-            arreglo.add(nfinal);
+            arreglo.add(formateada);
         }
 
         return arreglo;
