@@ -49,12 +49,12 @@ public class CalculoM {
      * @return Retorna un float con la nota que necesita para pasar.
      */
     public float notaPasar(float suma){
-        for(float i=0.0f;i<5.0f;i=i+0.01f){
-            float nota=(i*0.3f);
-            float sumanota=0.0f;
-            sumanota=nota+suma;
+        for(float i = 0.0f; i < 5.0f; i = i+0.01f){
+            float nota = (i*0.3f);
+            float sumanota = 0.0f;
+            sumanota = nota + suma;
 
-            if(sumanota>=2.95f)
+            if(sumanota >= 2.95f)
                 return  hallarnumero(nota);
         }
 
@@ -67,12 +67,12 @@ public class CalculoM {
      * @return Retorna un float
      */
     public float hallarnumero(float n){
-        float n2=0.0f;
-        for (float i=0.0f;i<=5.0f;i=i+0.1f){
-            n2=i*3;
-            float n3=n2*0.3f;
+        float n2 = 0.0f;
+        for (float i = 0.0f; i <= 5.0f; i = i+0.1f){
+            n2 = i*3;
+            float n3 = n2*0.3f;
 
-            if(n3>=n)
+            if(n3 >= n)
                 return n2;
         }
 
@@ -88,11 +88,11 @@ public class CalculoM {
      * @return Retorna la nota definitiva de la materia.
      */
     public float calcularnotafinal(float n1,float n2,float n3,float Nfinal){
-        float nota1=n1*0.23f;
-        float nota2=n2*0.23f;
-        float nota3=n3*0.23f;
-        float nfinal=Nfinal*0.30f;
+        float nota1 = n1*0.23f;
+        float nota2 = n2*0.23f;
+        float nota3 = n3*0.23f;
+        float nfinal = Nfinal*0.30f;
 
-        return nota1+nota2+nota3+nfinal;
+        return nota1 + nota2 + nota3 + nfinal;
     }
 }

@@ -20,12 +20,12 @@ public class utyliti {
      * @return Retorna un ArrayList de tipo String con las notas
      */
     public static  ArrayList<String> converTonfalta(ArrayList<Float> n){
-        ArrayList<String >arreglo=new ArrayList<>();
+        ArrayList<String >arreglo = new ArrayList<>();
         DecimalFormat d = new DecimalFormat("###.##");
 
         for(int i=0;i<n.size();i++){
-            String formateada=d.format(n.get(i));
-            String nfinal=converToString(n.get(i));
+            String formateada = d.format(n.get(i));
+            String nfinal = converToString(n.get(i));
             arreglo.add(formateada);
         }
 

@@ -29,10 +29,10 @@ public class Controlador {
      * en la posición 1 se guarda la nota que lleva y en la posición 2 la nota que necesita.
      */
     public ArrayList<String> calcularNotaFalta(float n1,float n2,float n3){
-        Negocio n=getbussinesInstance.ObtenerNegocio();
+        Negocio n = getbussinesInstance.ObtenerNegocio();
 
-        ArrayList<Float> nfalta=n.CalcularNotaFalta(n1,n2,n3);
-        ArrayList<String> nfinal=utyliti.converTonfalta(nfalta);
+        ArrayList<Float> nfalta = n.CalcularNotaFalta(n1,n2,n3);
+        ArrayList<String> nfinal = utyliti.converTonfalta(nfalta);
 
         return nfinal;
     }
@@ -45,11 +45,11 @@ public class Controlador {
      * @param Nfinal La nota correspondiente al examen final.
      * @return Retorna una cadena con la nota final de la materia.
      */
-    public String calcularNotafinal(float n1,float n2,float n3,float Nfinal){
-        Negocio n=getbussinesInstance.ObtenerNegocio();
+    public String calcularNotafinal(float n1, float n2, float n3, float Nfinal){
+        Negocio n = getbussinesInstance.ObtenerNegocio();
 
-        float total= n.calcularNotaf(n1,n2,n3,Nfinal);
-        String notaFinal=utyliti.convertostringnotafinal(total);
+        float total = n.calcularNotaf(n1,n2,n3,Nfinal);
+        String notaFinal = utyliti.convertostringnotafinal(total);
 
         return notaFinal;
     }
