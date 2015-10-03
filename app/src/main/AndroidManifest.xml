@@ -30,11 +30,5 @@
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-        <activity
-            android:name=".MainActivity2Activity"
-            android:label="@string/title_activity_main_activity2" >
-        </activity>
     </application>
-
 </manifest>
