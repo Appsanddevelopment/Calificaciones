@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         calcular70.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try{
+                try {
                     corte1 = (EditText) findViewById(R.id.txtNota1);
                     corte2 = (EditText) findViewById(R.id.txtNota2);
                     corte3 = (EditText) findViewById(R.id.txtNota3);
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     c2 = Float.parseFloat(corte2.getText().toString());
                     c3 = Float.parseFloat(corte3.getText().toString());
 
-                    if(c1 > 5 || c2 > 5 || c3 > 5){
+                    if (c1 > 5 || c2 > 5 || c3 > 5) {
                         Toast.makeText(getBaseContext(), "Calma, calma, sólo números menores o iguales a 5",
                                 Toast.LENGTH_LONG).show();
                         return;
@@ -91,15 +91,16 @@ public class MainActivity extends AppCompatActivity {
                     ArrayList<String> nota70 = c.calcularNotaFalta(c1, c2, c3);
 
                     lleva = (TextView) findViewById(R.id.lblNotaMateria);
-                    float notamm = Float.parseFloat(nota70.get(0));
-                    String notam = d.format(notamm);
-                    lleva.setText(notam);
+                    //  float notamm = Float.parseFloat(nota70.get(0));
+                    //    String notam = d.format(notamm);
+                    lleva.setText(nota70.get(0));
 
                     falta = (TextView) findViewById(R.id.lblNotaExamen);
-                    float notaff = Float.parseFloat((nota70.get(1)));
-                    String nota = d.format(notaff);
-                    falta.setText(nota);
-
+                //float notaff = Float.parseFloat((nota70.get(1)));
+                   // String nota = d.format(notaff);
+                    falta.setText((nota70.get(1)));
+/*
+*
                     if(notamm < 1.5)
                         Toast.makeText(getBaseContext(),"Yo de usted iria cancelando por que ni con 5 pasa",
                                 Toast.LENGTH_LONG).show();
@@ -112,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
                     else if(notamm >= 3.0)
                         Toast.makeText(getBaseContext(),"Feliciades ya pasaste, cada vez mas cerca del carrito de bonice :v",
                                 Toast.LENGTH_LONG).show();
+* **/
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar todos los datos ",
                             Toast.LENGTH_LONG).show();
