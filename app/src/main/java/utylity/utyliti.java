@@ -21,12 +21,10 @@ public class utyliti {
      */
     public static  ArrayList<String> converTonfalta(ArrayList<Float> n){
         ArrayList<String >arreglo = new ArrayList<>();
-        DecimalFormat d = new DecimalFormat("###.##");
 
         for(int i=0;i<n.size();i++){
-            String formateada = d.format(n.get(i));
             String nfinal = converToString(n.get(i));
-            arreglo.add(formateada);
+            arreglo.add(nfinal);
         }
 
         return arreglo;
@@ -37,16 +35,7 @@ public class utyliti {
      * @param n Valor en float a convertir
      * @return Retorna un String con el valor convertido
      */
-    protected static String converToString(float n){
+    public static String converToString(float n){
       return String.valueOf(n);
-    }
-
-    /**
-     * Convierte a String un float
-     * @param n Valor en float a convertir
-     * @return Retorna un String con el valor convertido
-     */
-    public static String convertostringnotafinal(float n){
-        return String.valueOf(n);
     }
 }

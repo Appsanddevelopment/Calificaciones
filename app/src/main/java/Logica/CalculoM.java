@@ -28,12 +28,9 @@ public class CalculoM {
      * @return Retorna un ArrayList con la nota que lleva [0] y la nota que falta [1].
      */
     public ArrayList<Float> calcularNotafalta(float n1,float n2,float n3){
-        ArrayList<Float> arreglo1= new ArrayList<Float>();
-        float notat1=n1*0.23f;
-        float notat2=n2*0.23f;
-        float notat3=n3*0.23f;
+        ArrayList<Float> arreglo1= new ArrayList<>();
 
-        float suma=(n1*0.23f)+(n2*0.23f)+(n3*0.23f);
+        float suma=(n1*0.23333333333f)+(n2*0.23333333333f)+(n3*0.23333333333f);
 
         arreglo1.add(suma);
         arreglo1.add(notaPasar(suma));
@@ -51,7 +48,7 @@ public class CalculoM {
     public float notaPasar(float suma){
         for(float i = 0.0f; i < 5.0f; i = i+0.01f){
             float nota = (i*0.3f);
-            float sumanota = 0.0f;
+            float sumanota;
             sumanota = nota + suma;
 
             if(sumanota >= 2.95f)
@@ -67,7 +64,7 @@ public class CalculoM {
      * @return Retorna un float
      */
     public float hallarnumero(float n){
-        float n2 = 0.0f;
+        float n2;
         for (float i = 0.0f; i <= 5.0f; i = i+0.1f){
             n2 = i*3;
             float n3 = n2*0.3f;
@@ -88,9 +85,9 @@ public class CalculoM {
      * @return Retorna la nota definitiva de la materia.
      */
     public float calcularnotafinal(float n1,float n2,float n3,float Nfinal){
-        float nota1 = n1*0.23f;
-        float nota2 = n2*0.23f;
-        float nota3 = n3*0.23f;
+        float nota1 = n1*0.23333333333f;
+        float nota2 = n2*0.23333333333f;
+        float nota3 = n3*0.23333333333f;
         float nfinal = Nfinal*0.30f;
 
         return nota1 + nota2 + nota3 + nfinal;

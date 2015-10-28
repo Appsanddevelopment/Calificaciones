@@ -31,7 +31,7 @@ public class Controlador {
     public ArrayList<String> calcularNotaFalta(float n1,float n2,float n3){
         Negocio n = getbussinesInstance.ObtenerNegocio();
 
-        ArrayList<Float> nfalta = n.CalcularNotaFalta(n1,n2,n3);
+        ArrayList<Float> nfalta = n.CalcularNotaFalta(n1, n2, n3);
         ArrayList<String> nfinal = utyliti.converTonfalta(nfalta);
 
         return nfinal;
@@ -49,7 +49,7 @@ public class Controlador {
         Negocio n = getbussinesInstance.ObtenerNegocio();
 
         float total = n.calcularNotaf(n1,n2,n3,Nfinal);
-        String notaFinal = utyliti.convertostringnotafinal(total);
+        String notaFinal = utyliti.converToString(total);
 
         return notaFinal;
     }

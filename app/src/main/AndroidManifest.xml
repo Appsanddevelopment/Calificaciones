@@ -25,10 +25,5 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="emanuel.calificaciones.MainActivity" />
         </activity>
-
-
-
-
-
     </application>
 </manifest>

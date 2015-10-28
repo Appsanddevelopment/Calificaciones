@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 res.getDrawable(R.drawable.icon_divisist));
         tabs.addTab(spec);
 
-        TabHost.TabSpec finalSpec = spec;
+        //TabHost.TabSpec finalSpec = spec;
 
         tabs.setCurrentTab(0);
 
@@ -90,21 +90,22 @@ public class MainActivity extends AppCompatActivity {
 
                     ArrayList<String> nota70 = c.calcularNotaFalta(c1, c2, c3);
 
+                    String nota1 = nota70.get(0);
+                    double notamm = Double.parseDouble(nota1);
+                    String notaFormat = d.format(notamm);
                     lleva = (TextView) findViewById(R.id.lblNotaMateria);
-                    //  float notamm = Float.parseFloat(nota70.get(0));
-                    //    String notam = d.format(notamm);
-                    lleva.setText(nota70.get(0));
+                    lleva.setText(notaFormat);
 
+                    String nota2 = nota70.get(1);
+                    Double notaDouble = Double.parseDouble(nota2);
+                    String notaFormat2 = d.format(notaDouble);
                     falta = (TextView) findViewById(R.id.lblNotaExamen);
-                //float notaff = Float.parseFloat((nota70.get(1)));
-                   // String nota = d.format(notaff);
-                    falta.setText((nota70.get(1)));
-/*
-*
+                    falta.setText(notaFormat2);
+
                     if(notamm < 1.5)
-                        Toast.makeText(getBaseContext(),"Yo de usted iria cancelando por que ni con 5 pasa",
+                        Toast.makeText(getBaseContext(),"Yo de usted iria cancelando porque ni con 5 pasa",
                                 Toast.LENGTH_LONG).show();
-                    else if(notaff >= 1.5 && notaff <= 1.7)
+                    else if(notaDouble >= 1.5 && notaDouble <= 1.7)
                         Toast.makeText(getBaseContext(),"Tienes las misma posibilidades de pasar que de conseguir novia :v",
                                 Toast.LENGTH_LONG).show();
                     else if(c1 == 5 && c2 == 5 && c3 == 5)
@@ -113,9 +114,8 @@ public class MainActivity extends AppCompatActivity {
                     else if(notamm >= 3.0)
                         Toast.makeText(getBaseContext(),"Feliciades ya pasaste, cada vez mas cerca del carrito de bonice :v",
                                 Toast.LENGTH_LONG).show();
-* **/
                 }catch(Exception ex){
-                    Toast.makeText(getBaseContext(), "Debe ingresar todos los datos ",
+                    Toast.makeText(getBaseContext(), "Debe ingresar todos los datos",
                             Toast.LENGTH_LONG).show();
                 }
             }
@@ -136,22 +136,27 @@ public class MainActivity extends AppCompatActivity {
                     c3 = Float.parseFloat(corte3.getText().toString());
                     ex = Float.parseFloat(examen.getText().toString());
 
+                    if (c1 > 5 || c2 > 5 || c3 > 5 || ex > 5) {
+                        Toast.makeText(getBaseContext(), "Calma, calma, sólo números menores o iguales a 5",
+                                Toast.LENGTH_LONG).show();
+                        return;
+                    }
+
                     String def = c.calcularNotafinal(c1, c2, c3, ex);
                     double deff = Double.parseDouble(def);
                     String  finall = d.format(deff);
-
                     definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
                     definitiva.setText(finall);
 
                     if(deff < 2.95)
-                        Toast.makeText(getBaseContext(), "baia, baia, debiste cancelar :v",
-                                Toast.LENGTH_LONG).show();
+                        Toast.makeText(getBaseContext(), "Baia, baia, debiste cancelar :v",
+                            Toast.LENGTH_LONG).show();
                     else if(c1 == 5 && c2 == 5 && c3 == 5 && ex == 5)
                         Toast.makeText(getBaseContext(), "Definitivamente si eres Chuck Norris",
-                                Toast.LENGTH_LONG).show();
+                            Toast.LENGTH_LONG).show();
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar todos los datos",
-                            Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_LONG).show();
                 }
             }
         });
