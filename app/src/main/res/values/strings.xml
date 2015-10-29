@@ -1,30 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Nombre de la aplicación -->
+    <!-- Recursos del Manifest -->
     <string name="app_name">Calificaciones</string>
-    <string name="title_activity_principal">Principal</string>
-    <string name="title_activity_divisist">Divisist</string>
+    <string name="title_activity_main">Calificaciones</string>
+    <string name="title_activity_info">Información</string>
+    <string name="subtitle_activity_info">Acerca de esta aplicación</string>
 
-    <!-- Menú de la app -->
-    <string name="mn_acerca">Acerca de</string>
-    <string name="mn_limpiar">Limpiar campos</string>
-    <string name="mn_Salir">Salir</string>
-    <string name="mn_volver">Volver</string>
-
-    <!-- String's del activity principal -->
-    <string name="string_text1">Nota 1</string>
-    <string name="string_text2">Nota 2</string>
-    <string name="string_text3">Nota 3</string>
-    <string name="string_title">Ingrese sus notas</string>
+    <!-- Recursos de String's para la MainActivity -->
+    <!-- Tab1 - Calculadora de notas -->
+    <string name="string_title_label">Calcular notas</string>
+    <string name="string_corte1">Primer corte</string>
+    <string name="string_corte2">Segundo corte</string>
+    <string name="string_corte3">Tercer corte</string>
     <string name="string_70">70%</string>
-    <string name="string_notaMinima">Nota mínima del examen</string>
+    <string name="string_notaMinima">Nota minima</string>
+    <string name="string_notaDefault">0.0</string>
     <string name="string_NotaExamen">Nota del examen</string>
     <string name="string_definitiva">Nota definitiva</string>
-    <string name="string_notaDefault">0.0</string>
+    <string name="buttom_caclcular">Calcular</string>
 
-    <!-- Botones -->
-    <string name="buttom_calcular">Calcular</string>
-    <string name="cmd_CalcularDef">Calcular definitiva</string>
-    <string name="cmd_divisist">Divisist</string>
+        <!-- String's para el menú de MainActivity -->
+        <string name="action_about">Información</string>
+        <string name="action_clear">Limpias campos</string>
+
+    <!-- Recursos de String's para InfoActivity -->
+    <!-- Tab1 - Creditos -->
+    <string name="string_creditos">Créditos</string>
+    <string name="string_version">Versión 1.0</string>
+    <string name="string_descripcionCreditos">
+        Esta aplicación ha sido desarrollada en LabApps con fines
+        comunitarios no lucrativos, con calificaciones usted puede calcular sus notas de la
+        universidad así como ingresar al portal institucional.
+    </string>
+    <string name="string_autores">
+        <b>Desarrollo: \n</b>
+        <i>Jairo Andrés Castañeda Pacheco \n
+        Emanuel Martínez Pinzón. </i> \n\n
+        <b>Diseño: \n</b>
+        <i>Jeisson Eduardo Rangel Baez </i>
+    </string>
+    <string name="string_lic">Derechos ligados a la licencia de uso.</string>
+
+    <!-- Tab2 - Contacto y correo -->
+    <string name="string_contacto">Contacto</string>
+    <string name="string_descripcionContacto">
+        Usted puede contactarnos o visitar alguna de nuestras redes sociales para conocer más sobre
+        nuestros proyectos o participar en alguno de ellos.
+    </string>
+    <string name="string_correo">labapps.sbg@gmail.com</string>
+    <string name="string_web">labapps.softwaregratis.org</string>
+    <string name="string_facebook">labappsSGB</string>
+    <string name="string_twitter">\@labappsSBG</string>
+
+    <!-- Tab3 - Licencia y terminos de código -->
+    <string name="string_licencia">GPL v3</string>
+    <string name="string_descripcionlicencia">
+        Esta aplicación esta licenciada bajo la licencia pública general en su versión 3, esto le permite
+        hacer uso de la aplicación con cualquier fin, estudiar su código, modificarla y redistribuirla
+        sin restricciones, así cómo las demás libertades y responsabilidades que le otroga la licencia.
+    </string>
+    <string name="string_descripcionlicencia2.3">
+        Esta aplicación esta licenciada bajo la licencia pública general en su versión 3.
+    </string>
+    <string name="string_vercodigo">Ver código</string>
+    <string name="string_verLicencia">Ver licencia</string>
+    <string name="string_derechos">Se pueden realizar cambios sin previo aviso.</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

@@ -1,0 +1,306 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Aquí inicia el contenido de la tab1 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/label_creditos"
+                        android:background="#F1F1F1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/title_creditos"
+                            android:ellipsize="none"
+                            android:scrollHorizontally="false"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/string_creditos"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textIsSelectable="false"
+                            android:textColor="#000" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_app"
+                            android:layout_below="@+id/title_creditos"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/imageView4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_version"
+                            android:id="@+id/textView"
+                            android:layout_below="@+id/imageView4"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/infoAuthor"
+                            android:ellipsize="none"
+                            android:scrollHorizontally="false"
+                            android:text="@string/string_autores"
+                            android:textIsSelectable="false"
+                            android:layout_below="@+id/textView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/infoDerechos"
+                            android:ellipsize="none"
+                            android:scrollHorizontally="false"
+                            android:text="@string/string_lic"
+                            android:textSize="10dp"
+                            android:textIsSelectable="false"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <!-- Aquí inicia el contenido de la Tab2 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/label_contacto"
+                        android:background="#F1F1F1">
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/title_Contacto"
+                            android:ellipsize="none"
+                            android:scrollHorizontally="false"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/string_contacto"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textIsSelectable="false"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:id="@+id/infoContacto"
+                            android:ellipsize="none"
+                            android:scrollHorizontally="false"
+                            android:text="@string/string_descripcionContacto"
+                            android:textIsSelectable="false"
+                            android:layout_below="@+id/title_Contacto"
+                            android:layout_alignLeft="@+id/title_Contacto"
+                            android:layout_alignStart="@+id/title_Contacto" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_correo"
+                            android:id="@+id/textEmail"
+                            android:textColor="#009F8A"
+                            android:layout_marginLeft="17dp"
+                            android:layout_below="@+id/infoContacto"
+                            android:layout_alignLeft="@+id/infoContacto"
+                            android:layout_alignStart="@+id/infoContacto"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_web"
+                            android:layout_below="@+id/textEmail"
+                            android:layout_alignLeft="@+id/textEmail"
+                            android:layout_alignStart="@+id/textEmail"
+                            android:id="@+id/textWeb"
+                            android:textColor="#009F8A" />
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="19dp"
+                            android:src="@drawable/fb"
+                            android:id="@+id/fb"
+                            android:layout_below="@+id/textWeb"
+                            android:layout_alignLeft="@+id/textWeb"
+                            android:layout_alignStart="@+id/textWeb"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_facebook"
+                            android:id="@+id/textFb"
+                            android:textColor="#009F8A"
+                            android:layout_alignBottom="@+id/fb"
+                            android:layout_toRightOf="@+id/fb"
+                            android:layout_toEndOf="@+id/fb"
+                            android:layout_marginLeft="5dp"/>
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="19dp"
+                            android:id="@+id/tw"
+                            android:src="@drawable/twitter"
+                            android:layout_alignBottom="@+id/textFb"
+                            android:layout_toRightOf="@+id/textFb"
+                            android:layout_toEndOf="@+id/textFb"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_twitter"
+                            android:layout_alignBaseline="@+id/textFb"
+                            android:layout_alignBottom="@+id/textFb"
+                            android:layout_toRightOf="@+id/tw"
+                            android:layout_toEndOf="@+id/tw"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/textTw"
+                            android:textColor="#009F8A"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <!-- Aquí inicia el contenido de la Tab3 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/label_source"
+                        android:background="#F1F1F1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:id="@+id/licencia"
+                                android:ellipsize="none"
+                                android:scrollHorizontally="false"
+                                android:text="@string/string_licencia"
+                                android:layout_marginTop="10dp"
+                                android:textSize="25dp"
+                                android:textIsSelectable="false"
+                                android:textColor="#000" />
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/gpl"
+                                android:id="@+id/imageView5"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:id="@+id/infolicencia"
+                                android:ellipsize="none"
+                                android:scrollHorizontally="false"
+                                android:text="@string/string_descripcionlicencia"
+                                android:textIsSelectable="false"
+                                android:layout_below="@+id/imageView5"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/string_vercodigo"
+                                    android:id="@+id/verCodigo"
+                                    android:textColor="#009F8A"
+                                    android:layout_marginLeft="40dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/string_verLicencia"
+                                    android:id="@+id/verLicencia"
+                                    android:textColor="#009F8A"
+                                    android:layout_marginLeft="70dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/derechos"
+                            android:ellipsize="none"
+                            android:scrollHorizontally="false"
+                            android:text="@string/string_derechos"
+                            android:textIsSelectable="false"
+                            android:textSize="10dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

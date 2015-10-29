@@ -35,7 +35,8 @@
                         android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#F1F1F1">
+                        android:background="#F1F1F1"
+                        android:id="@+id/tb1">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -135,7 +136,7 @@
                                 android:text="@string/string_70"
                                 android:id="@+id/textView8"
                                 android:gravity="center"
-                                android:layout_weight="0.16"/>
+                                android:layout_weight="0.13"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
