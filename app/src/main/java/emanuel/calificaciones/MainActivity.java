@@ -151,13 +151,6 @@ public class MainActivity extends AppCompatActivity {
                     definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
                     definitiva.setText(finall);
 
-                    Toast.makeText(getBaseContext(), "deff: "+deff+" Definitiva: "+finall, Toast.LENGTH_LONG).show();
-
-                    if(deff>=2.945){
-                        Toast.makeText(getBaseContext(), "Si es mayor o igual", Toast.LENGTH_LONG).show();
-                    }else
-                        Toast.makeText(getBaseContext(), "No lo es", Toast.LENGTH_LONG).show();
-
                     if(deff < 2.945 && deff != 0.0)
                         Toast.makeText(getBaseContext(), "Baia, baia, debiste cancelar :v",
                             Toast.LENGTH_LONG).show();
@@ -166,9 +159,9 @@ public class MainActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                     else if(deff == 0)
                         Toast.makeText(getBaseContext(), "¿Qué estas haciendo realmente?\nUn minuto de silencio por ese promedio.", Toast.LENGTH_LONG).show();
-                    else if(deff >= 2.945 && deff < 3.0)
+                    else if(deff >= 2.945 && deff < 2.995)
                         Toast.makeText(getBaseContext(), "Aquí es cuando amarás divisist", Toast.LENGTH_LONG).show();
-                    else if(deff == 3)
+                    else if(deff >= 2.995 && deff <= 3.005)
                         Toast.makeText(getBaseContext(), "Este es el pequeño momento de la vida que yo llamo felicidad",
                             Toast.LENGTH_LONG).show();
                 }catch(Exception ex){
