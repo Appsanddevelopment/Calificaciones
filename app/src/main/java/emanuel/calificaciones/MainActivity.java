@@ -3,11 +3,14 @@ package emanuel.calificaciones;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.JsResult;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -148,11 +151,18 @@ public class MainActivity extends AppCompatActivity {
                     definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
                     definitiva.setText(finall);
 
-                    if(deff < 2.95)
+                    if(deff < 2.945 && deff != 0.0)
                         Toast.makeText(getBaseContext(), "Baia, baia, debiste cancelar :v",
                             Toast.LENGTH_LONG).show();
                     else if(c1 == 5 && c2 == 5 && c3 == 5 && ex == 5)
                         Toast.makeText(getBaseContext(), "Definitivamente si eres Chuck Norris",
+                            Toast.LENGTH_LONG).show();
+                    else if(deff == 0)
+                        Toast.makeText(getBaseContext(), "¿Qué estas haciendo realmente?\nUn minuto de silencio por ese promedio.", Toast.LENGTH_LONG).show();
+                    else if(deff >= 2.945 && deff < 2.995)
+                        Toast.makeText(getBaseContext(), "Aquí es cuando amarás divisist", Toast.LENGTH_LONG).show();
+                    else if(deff >= 2.995 && deff <= 3.005)
+                        Toast.makeText(getBaseContext(), "Este es el pequeño momento de la vida que yo llamo felicidad",
                             Toast.LENGTH_LONG).show();
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar todos los datos",
@@ -169,6 +179,29 @@ public class MainActivity extends AppCompatActivity {
 
         wb.loadUrl("http://www.divisist.ufps.edu.co");
         wb.getSettings().setBuiltInZoomControls(true);
+        wb.setWebViewClient(new myWebViewAlertJS());
+        wb.setWebChromeClient(new DefaultWebBrowser());
+    }
+
+    private class myWebViewAlertJS extends WebViewClient
+    {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url)
+        {
+            view.loadUrl(url);
+            return true;
+        }
+    }
+
+    final class DefaultWebBrowser extends WebChromeClient
+    {
+        @Override
+        public boolean onJsAlert(WebView view, String url, String message, JsResult result)
+        {
+            new AlertDialog.Builder(view.getContext()).setMessage(message).setCancelable(true).show();
+            result.confirm();
+            return true;
+        }
     }
 
     @Override

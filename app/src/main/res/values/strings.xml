@@ -26,7 +26,7 @@
     <!-- Recursos de String's para InfoActivity -->
     <!-- Tab1 - Creditos -->
     <string name="string_creditos">Créditos</string>
-    <string name="string_version">Versión 1.0</string>
+    <string name="string_version">Versión 1.2</string>
     <string name="string_descripcionCreditos">
         Esta aplicación ha sido desarrollada en LabApps con fines
         comunitarios no lucrativos, con calificaciones usted puede calcular sus notas de la
@@ -35,7 +35,7 @@
     <string name="string_autores">
         <b>Desarrollo: \n</b>
         <i>Jairo Andrés Castañeda Pacheco \n
-        Emanuel Martínez Pinzón. </i> \n\n
+        Emanuel Martínez Pinzón </i> \n\n
         <b>Diseño: \n</b>
         <i>Jeisson Eduardo Rangel Baez </i>
     </string>

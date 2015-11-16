@@ -46,12 +46,12 @@ public class CalculoM {
      * @return Retorna un float con la nota que necesita para pasar.
      */
     public float notaPasar(float suma){
-        for(float i = 0.0f; i < 5.0f; i = i+0.01f){
+        for(float i = 0.0f; i <= 5.0f; i = i+0.001f){
             float nota = (i*0.3f);
             float sumanota;
             sumanota = nota + suma;
 
-            if(sumanota >= 2.95f)
+            if(sumanota >= 3f)
                 return  hallarnumero(nota);
         }
 
@@ -65,7 +65,7 @@ public class CalculoM {
      */
     public float hallarnumero(float n){
         float n2;
-        for (float i = 0.0f; i <= 5.0f; i = i+0.1f){
+        for (float i = 0.0f; i <= 5.0f; i = i+0.001f){
             n2 = i*3;
             float n3 = n2*0.3f;
 
