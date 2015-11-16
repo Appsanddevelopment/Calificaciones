@@ -151,15 +151,26 @@ public class MainActivity extends AppCompatActivity {
                     definitiva = (TextView) findViewById(R.id.lblNotaDefinitiva);
                     definitiva.setText(finall);
 
-                    if(deff < 2.95)
+                    Toast.makeText(getBaseContext(), "deff: "+deff+" Definitiva: "+finall, Toast.LENGTH_LONG).show();
+
+                    if(deff>=2.945){
+                        Toast.makeText(getBaseContext(), "Si es mayor o igual", Toast.LENGTH_LONG).show();
+                    }else
+                        Toast.makeText(getBaseContext(), "No lo es", Toast.LENGTH_LONG).show();
+
+                    if(deff < 2.945 && deff != 0.0)
                         Toast.makeText(getBaseContext(), "Baia, baia, debiste cancelar :v",
                             Toast.LENGTH_LONG).show();
                     else if(c1 == 5 && c2 == 5 && c3 == 5 && ex == 5)
                         Toast.makeText(getBaseContext(), "Definitivamente si eres Chuck Norris",
                             Toast.LENGTH_LONG).show();
+                    else if(deff == 0)
+                        Toast.makeText(getBaseContext(), "¿Qué estas haciendo realmente?\nUn minuto de silencio por ese promedio.", Toast.LENGTH_LONG).show();
+                    else if(deff >= 2.945 && deff < 3.0)
+                        Toast.makeText(getBaseContext(), "Aquí es cuando amarás divisist", Toast.LENGTH_LONG).show();
                     else if(deff == 3)
-                        Toast.makeText(getBaseContext(), "Este es el pequeño momento de la vida que" +
-                                " yo llamo felicidad", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getBaseContext(), "Este es el pequeño momento de la vida que yo llamo felicidad",
+                            Toast.LENGTH_LONG).show();
                 }catch(Exception ex){
                     Toast.makeText(getBaseContext(), "Debe ingresar todos los datos",
                         Toast.LENGTH_LONG).show();
