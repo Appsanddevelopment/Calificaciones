@@ -26,10 +26,11 @@
     <!-- Recursos de String's para InfoActivity -->
     <!-- Tab1 - Creditos -->
     <string name="string_creditos">Créditos</string>
-    <string name="string_version">Versión 1.1</string>
+    <string name="string_version">Versión 1.2</string>
     <string name="string_descripcionCreditos">
-        <b>Para los testers: </b>LabApps agradece la colaboración de ustedes al aceptar probar la aplicación en su etapa de
-        desarrollo, ahora que la versión 1.2 ha sido lanzada como estable a ustedes les dedicamos esta versión 1.1.
+        Esta aplicación ha sido desarrollada en LabApps con fines
+        comunitarios no lucrativos, con calificaciones usted puede calcular sus notas de la
+        universidad así como ingresar al portal institucional.
     </string>
     <string name="string_autores">
         <b>Desarrollo: \n</b>
