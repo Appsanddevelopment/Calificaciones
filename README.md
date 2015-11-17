@@ -1,14 +1,16 @@
 # Bienvenido a Calificaciones App
 
-![IconApp] (http://labapps.softwaregratis.org/wp-content/uploads/2015/10/ic_launcher.png)
+![App] (http://labapps.softwaregratis.org/wp-content/uploads/2015/11/App.png)
+
+<a title="Descargar Aplicación" href="https://drive.google.com/file/d/0B32jdr7ql6KnM1psWjVNQVZvVjg/view"><img width="512" alt="descarga" src="http://labapps.softwaregratis.org/wp-content/uploads/2015/11/Descargar.png"/></a>
 
 Calificaciones es una aplicación para Android que le permite calcular sus notas y acceder al portal institucional de la Universidad Francisco de Paula Santander.
 
-Usted puede calcular la nota que lleva en su materia hasta antes del examen final y así saber cuanto necesita para aprobar, también puede calcular en cuanto le quedaría la matería en definitiva con todas las notas obtenidas en el semestre. El acceso al portal institucional se hace de forma limitada dandole paso a la plataforma oficial en un panel que carga su vista para móvil permitiendole a usted ingresar y consultar sus notas allí mismo en el sistema.
+Usted puede calcular la nota que lleva en su materia hasta antes del examen final y así saber cuanto necesita para aprobar, también puede calcular en cuanto le quedaría la materia en definitiva con todas las notas obtenidas en el semestre. El acceso al portal institucional se hace de forma limitada dandole paso a la plataforma oficial en un panel que carga su vista para móvil permitiendole a usted ingresar y consultar sus notas allí mismo en el sistema.
 
 La ecuación que calcula la nota final es acorde a la usada por la institución, los tres cortes constituyen el 70% de la nota y el examen final tiene un valor del 30%, siguiendo esto se calculan cada una de las partes mostradas en la aplicación. Puede explorar el código para entender mejor cómo trabaja esta aplicación. 
 
-Esta aplicación esta licenciada bajo a licencia pública general en su versión 3 (GPL v3), así cómo en ella se menciona y así cómo aquí es evidente usted puede compartir la aplicación, estudiar su funcionamiento, copiar y/o modificar el código y compartir los cambios. Así también como todas las libertades que le otorga esta licencia. Puede leer más acerca de esta licencia clickeando en la imagen.
+Esta aplicación esta licenciada bajo a licencia pública general en su versión 3 (GPL v3), así cómo en ella se menciona y así cómo aquí es evidente usted puede compartir la aplicación, estudiar su funcionamiento, copiar y/o modificar el código y compartir los cambios, así también como todas las libertades que le otorga esta licencia. Puede leer más acerca de esta licencia clickeando en la imagen.
 
 <a title="By Free Software Foundation, via Wikimedia Commons" href="http://www.gnu.org/licenses/gpl-3.0.en.html"><img width="512" alt="GPLv3 Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/512px-GPLv3_Logo.svg.png"/></a>
 
